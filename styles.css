@@ -130,6 +130,7 @@ margin: 30px 0;
 #login-conteiner .caixacheck{
     display: flex;
     font-size: 14.5px;
+    margin: 15px 0 30px;
 }
 
 .caixacheck input{
