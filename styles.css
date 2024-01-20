@@ -23,11 +23,57 @@ body {
     overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
     background-color: bisque;
 }
-
-.game-container img {
+/* Disposição do cenário principal */
+#Image_room {
     width: 100%;
     height: 100%;
     object-fit:contain;
+}
+/* Disposição da barra de moedas */
+#Image_coins_bar{
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+}
+/* Disposição da barra de tempo */
+#Image_time_bar{
+    position: absolute;
+    top: 170px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+}
+/* Disposição do contador de tempo */
+#contador {
+    
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 50px;
+}
+/* Disposição do ícone das moedas */
+#Image_coins{
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#Image_time{
+    position: absolute;
+    top: 167px;
+    left: 60px;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 100px;
 }
 
 .game-menu img{
