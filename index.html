@@ -7,18 +7,41 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+     <!-- Criação de um botão "jogar" que vai redirecionar para o jogo -->
      <div class = "button-changes">
-     <button onclick="redirecionar()">Jogar</button>
+        <button onclick="redirecionar()">Jogar</button>
+     </div>
+     <!-- Criação de um botão que vai redirecionar para o formulário de login-->
+     <div class = "login-changes">
+        <button onclick="redirecionarParaFormularioLogin()">Login</button>
      </div>
      <div class = "game-menu">
      </div>
 
+     <!-- Criação de um formulário para o login -->
+     <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+    
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+    </form>
+
 <!-- Scripts -->
 <script>
-     // Função para redirecionar
+     // Função para redirecionar para o jogo
      function redirecionar() {
         window.location.href = 'jogo.html';
      }
+     // Função para redirecionar para o formulário de login
+    function redirecionarParaFormularioLogin() {
+        let elemento = document.getElementById("loginForm");
+        if (elemento.style.display === 'none') {
+            elemento.style.display = 'block'; // Mostra o elemento
+        } else {
+            elemento.style.display = 'none'; // Esconde o elemento
+        }
+    }
 </script>
 
 </body>

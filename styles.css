@@ -36,10 +36,26 @@ body {
     object-fit:contain;
 }
 
-.button-changes{
-    font-size: 6px;
-    z-index: 1; /* Certifica-se de que o botão esteja acima da imagem */
-    margin-top: -230px;
-    margin-left: 430px;
-    
+.button-changes {
+    margin-right: -500px;
+    margin-top: -250px;
+}
+
+.button-changes button {
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #67CB57;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-changes button:hover {
+    background-color: #45a049;
+}
+#loginForm{
+    display: none; /* Inicia oculto */
 }
