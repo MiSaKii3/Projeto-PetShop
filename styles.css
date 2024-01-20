@@ -1,16 +1,45 @@
-body{
+body {
     background: #333;
-    padding: 0;
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Images/ShopBG_1920x1080px.png'); /* Colocar a imagem do menu como fundo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.game-container{
-position: relative;
-width: 352px;
-height: 198px;
-margin: 0 auto;
-margin-top: 20px;
-outline: 1px solid #fff;
+.game-container {
+    text-align: center;
+    position: relative;
+    width: 80%; 
+    max-width: 1800px; 
+    height: 800px;
+    margin: 20px auto 0;
+    outline: 1px solid #fff;
+    overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
+    background-color: bisque;
 }
 
+.game-container img {
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.game-menu img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+}
+
+.button-changes{
+    font-size: 6px;
+    z-index: 1; /* Certifica-se de que o botão esteja acima da imagem */
+    margin-top: -230px;
+    margin-left: 430px;
+    
+}
