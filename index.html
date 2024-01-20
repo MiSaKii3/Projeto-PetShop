@@ -24,6 +24,21 @@
             <i class='bx bxs-lock-alt'></i>
             </div>
 
+            <div class="caixacheck">
+            <input type="checkbox" id="caxinhacheck" onclick="MostrarPass();">Show Password
+            </div>
+
+            <script>
+                function MostrarPass() {
+                  var mostraresconder = document.getElementById("caixatextopass");
+                  if (mostraresconder.type === "password") {
+                    mostraresconder.type = "text";
+                  } else {
+                    mostraresconder.type = "password";
+                  }
+                }
+                </script>
+
             <input type="submit" value="Login" id= "botaologar" onclick="">
             
             <a href="jogo.html"></a>
