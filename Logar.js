@@ -15,6 +15,12 @@ function Login() {
         return true;
     }
 
-    alert("Username or Password are incorrect!");
+    if(user.value == "" || pass.value == "")
+    {
+        alert("Todos os campos não estão preenchidos");
+        return false;
+    }
+
+    alert("Username ou Password incorretas");
     return false;
 }
