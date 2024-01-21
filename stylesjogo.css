@@ -5,15 +5,12 @@ body {
     display: flex;
     justify-content: center;
     background-image: url('Images/fundo.png'); /* Colocar a imagem do menu como fundo */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: fixed;
 }
 
 .game-container {
-    text-align: center;
-    position: relative;
-    width: 80%; 
+    position: absolute;
+    width: 1200px; 
     max-width: 1800px; 
     height: 800px;
     margin: 20px auto 0;
