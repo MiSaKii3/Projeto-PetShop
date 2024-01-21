@@ -33,10 +33,10 @@ body {
 
 #Main_Character {
     position: absolute;
-    top: 360px;
-    left: 730px; /* 800px - 70px */
+    top: 500px;
+    left: 930px; /* 800px - 70px */
     transform: translate(-50%, -50%);
-    width: 130px;
+    width: 66px;
 }
 
 #Tapete_animais {
@@ -44,8 +44,7 @@ body {
     top: 400px;
     left: 340px; /* 410px - 70px */
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 500px;
+    height: 200px;
 }
 
 #Cão {
@@ -87,10 +86,10 @@ body {
 
 #Tapete_entrada {
     position: absolute;
-    top: 896px;
+    top: 890px;
     left: 703px; /* 632px - 70px */
     transform: translate(-50%, -50%);
-    width: 230px;
+    width: 100px;
 }
 
 #Caixa_Registadora {
@@ -105,9 +104,9 @@ body {
 #Image_coins_bar{
     position: absolute;
     top: 130px;
-    left: 160px;
+    left: 166px;
     transform: translate(-50%, -50%);
-    width: 233px;
+    width: 180px;
     z-index: 1;
 
 }
@@ -115,17 +114,18 @@ body {
 #Image_time_bar{
     position: absolute;
     top: 230px;
-    left: 160px;
+    left: 166px;
     transform: translate(-50%, -50%);
-    width: 233px;
+    width: 180px;
+    z-index: 1;
 }
 
 /* Disposição do contador de tempo */
 #contador {
     z-index: 2;
     position: absolute;
-    top: 256px;
-    left: 200px;
+    top: 260px;
+    left: 210px;
     transform: translate(-90%, -150%);
     font-weight: bold;
     font-size: 26px;
@@ -136,15 +136,15 @@ body {
 #Image_coins{
     position: absolute;
     top: 123px;
-    left: 36px;
+    left: 43px;
     transform: translate(-50%, -50%);
-    width: 55px;
+    width: 50px;
 }
 
 #Image_time{
     position: absolute;
     top: 225px;
-    left: 36px;
+    left: 43px;
     transform: translate(-50%, -50%);
-    width: 190px;
+    width: 40px;
 }
