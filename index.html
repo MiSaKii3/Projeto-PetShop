@@ -7,6 +7,7 @@
     <title>Pet Shop | Login</title>
     <link rel="icon" type="image/x-icon" href="Images/icon.ico">
     <link href="styles.css" rel="stylesheet">
+    <script src="Logar.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -28,9 +29,10 @@
             <input type="checkbox" id="caxinhacheck" onclick="MostrarPass();">Show Password
             </div>
 
+            <!--Para mostrar a password da caixa de texto-->
             <script>
                 function MostrarPass() {
-                  var mostraresconder = document.getElementById("caixatextopass");
+                  let mostraresconder = document.getElementById("caixatextopass");
                   if (mostraresconder.type === "password") {
                     mostraresconder.type = "text";
                   } else {
@@ -40,7 +42,7 @@
                 </script>
 
             <a href="jogo.html">
-            <input type="submit" value="Login" id= "botaologar" onclick="">
+            <input type="submit" value="Login" id= "botaologar" onclick="Login();">
             </a>
             
         </form>
