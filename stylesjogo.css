@@ -10,13 +10,19 @@ body {
 
 .game-container {
     position: absolute;
-    width: 1200px; 
+    width: 1500px; 
     max-width: 1800px; 
-    height: 800px;
+    height: 1000px;
     margin: 20px auto 0;
-    outline: 1px solid #fff;
+    outline: 3px solid #fff;
     overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
     background-color: bisque;
+}
+
+.game-container #Image_room
+{
+    position: absolute;
+    height: 1116px
 }
 
 .game-container img {
@@ -25,8 +31,120 @@ body {
     object-fit:contain;
 }
 
-.game-menu img{
-    width: 100%;
-    height: 100%;
-    object-fit:contain;
+#Main_Character {
+    position: absolute;
+    top: 360px;
+    left: 730px; /* 800px - 70px */
+    transform: translate(-50%, -50%);
+    width: 130px;
+}
+
+#Tapete_animais {
+    position: absolute;
+    top: 400px;
+    left: 340px; /* 410px - 70px */
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+}
+
+#Cão {
+    position: absolute;
+    top: 360px;
+    left: 355px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+}
+
+#Coelho {
+    position: absolute;
+    top: 425px;
+    left: 355px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    z-index: 1;
+}
+
+#Gato {
+    position: absolute;
+    top: 430px;
+    left: 300px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+}
+
+#Hamster {
+    position: absolute;
+    top: 360px;
+    left: 300px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+}
+
+#Tapete_entrada {
+    position: absolute;
+    top: 896px;
+    left: 703px; /* 632px - 70px */
+    transform: translate(-50%, -50%);
+    width: 230px;
+}
+
+#Caixa_Registadora {
+    position: absolute;
+    top: 550px;
+    left: 940px; /* 805px - 70px */
+    transform: translate(-50%, -50%);
+    width: 130px;
+}
+
+/* Disposição da barra de moedas */
+#Image_coins_bar{
+    position: absolute;
+    top: 130px;
+    left: 160px;
+    transform: translate(-50%, -50%);
+    width: 233px;
+    z-index: 1;
+
+}
+/* Disposição da barra de tempo */
+#Image_time_bar{
+    position: absolute;
+    top: 230px;
+    left: 160px;
+    transform: translate(-50%, -50%);
+    width: 233px;
+}
+
+/* Disposição do contador de tempo */
+#contador {
+    z-index: 2;
+    position: absolute;
+    top: 256px;
+    left: 200px;
+    transform: translate(-90%, -150%);
+    font-weight: bold;
+    font-size: 26px;
+
+}
+
+/* Disposição do ícone das moedas */
+#Image_coins{
+    position: absolute;
+    top: 123px;
+    left: 36px;
+    transform: translate(-50%, -50%);
+    width: 55px;
+}
+
+#Image_time{
+    position: absolute;
+    top: 225px;
+    left: 36px;
+    transform: translate(-50%, -50%);
+    width: 190px;
 }
