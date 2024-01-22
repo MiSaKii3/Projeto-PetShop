@@ -1,5 +1,12 @@
-var objetos = document.getElementsByClassName("object");
+var objetos = document.getElementsByClassName("objeto");
 console.log(objetos);
+
+var limit_down = 890;
+var limit_up = 360;
+var limit_left = 320;
+var limit_right = 1180;
+
+
 function verifyAllCollisions(player_x, player_y) {
     for (var i = 0; i < objetos.length; i++) {
         if (verifyCollision(player_x, player_y, objetos[i]))
@@ -10,30 +17,39 @@ function verifyAllCollisions(player_x, player_y) {
 
 function verifyCollision(player_x, player_y, objeto) {
     var player = document.getElementById("Main_Character");
+    if (player_x < limit_left || player_x > limit_right ||
+        player_y < limit_up || player_y > limit_down){
+            console.log("Out of bounds");
+            return true;
+    }
+
+
     var objeto_x = objeto.offsetLeft;
     var objeto_y = objeto.offsetTop;
     var objWidth = (objeto.offsetWidth)/2;
     var objHeight = objWidth * (objeto.naturalHeight/objeto.naturalWidth);
     var playerWidth = (player.offsetWidth)/2;
     var playerHeight = playerWidth * (player.naturalHeight/player.naturalWidth);
-    // Get the dimensions of the image
-    // is object is the coelho, console log it
-    console.log(objeto.id);
-    console.log(player_x, player_y);
-    console.log(objeto_x, objeto_y);
-    console.log(Math.abs(player_x - objeto_x));
-    console.log(Math.abs(player_y - objeto_y));
-    console.log(objWidth, objHeight);
-    console.log(objeto.naturalWidth, objeto.naturalHeight);
-    console.log(objeto.offsetWidth, objeto.offsetHeight);
+    // Just in case we have to log anything
     
+    console.log(player_x, player_y);
+    if(false){
+        console.log(objeto.id);
+        console.log(player_x, player_y);
+        console.log(objeto_x, objeto_y);
+        console.log(Math.abs(player_x - objeto_x));
+        console.log(Math.abs(player_y - objeto_y));
+        console.log(objWidth, objHeight);
+        console.log(objeto.naturalWidth, objeto.naturalHeight);
+        console.log(objWidth + playerWidth, objHeight + playerHeight);
+    }
 
     
 
     if (inRange(player_x, objeto_x, objWidth + playerWidth) &&
         inRange(player_y, objeto_y, objHeight + playerHeight)){
 
-        alert("Collision with " + objeto.id);
+        console.log("Collision with " + objeto.id);
         return true;
     }
     return false;
