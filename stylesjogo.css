@@ -215,7 +215,7 @@ body {
     top: 750px;
     left: 530px; 
     transform: translate(-50%, -50%);
-    width: 70px;
+    width: 35px;
 }
 
 #hamster2 {
@@ -223,7 +223,7 @@ body {
     top: 750px;
     left: 600px; 
     transform: translate(-50%, -50%);
-    width: 70px;
+    width: 35px;
 }
 
 #hamster3 {
@@ -231,7 +231,7 @@ body {
     top: 820px;
     left: 590px;
     transform: translate(-50%, -50%);
-    width: 70px;
+    width: 35px;
 }
 
 #hamster4 {
@@ -239,7 +239,15 @@ body {
     top: 820px;
     left: 530px; 
     transform: translate(-50%, -50%);
-    width: 70px;
+    width: 35px;
+}
+
+#hamster5 {
+    position: absolute;
+    top: 780px;
+    left: 565px; 
+    transform: translate(-50%, -50%);
+    width: 35px;
 }
 
 /* ------------------------------------------ */
@@ -327,15 +335,15 @@ body {
 }
 
 #coolButton {
-    position: fixed;
-    top: 20px;
-    left: 20px;
+    position: absolute;
+    top:33px;
+    left: 33px;
     padding: 10px 20px;
     background-color: transparent;
     color: #000000;
     border: none;
     border-radius: 5px;
-    font-size: 48px;
+    font-size: 66px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     width: 100px;
@@ -343,7 +351,7 @@ body {
 }
 
 #coolButton:hover {
-    background-color: #2980b9;
+    background-color: #ffa166;
 }
 
 #cliente {
