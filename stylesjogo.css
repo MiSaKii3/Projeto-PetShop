@@ -327,21 +327,28 @@ body {
 }
 
 #coolButton {
-      position: fixed;
-      top: 20px;
-      left: 20px;
-      padding: 10px 20px;
-      background-color: transparent;
-      color: #000000;
-      border: none;
-      border-radius: 5px;
-      font-size: 48px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      width: 100px;
-      height: 100px;
-    }
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 48px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+}
 
-    #coolButton:hover {
-      background-color: #2980b9;
-    }
+#coolButton:hover {
+    background-color: #2980b9;
+}
+
+#cliente {
+    position: absolute;
+    top: 880px;
+    transform: translate(-50%, -50%);
+    width: 80px;
+}
