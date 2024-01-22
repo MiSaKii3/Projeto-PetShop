@@ -6,6 +6,29 @@ const clients = [
     {url : 'Images/Clientes/tile004.png', name : 'tile004'},
 ];
 
+/* pedidos possiveis que os clientes facam */
+const pedidos = [
+    // Animais
+    {url : 'Images/acessorios/animais/gatos/gato1.png', pedido : 'gato'},
+    {url : 'Images/acessorios/animais/gatos/gato2.png', pedido : 'gato'},
+    {url : 'Images/acessorios/animais/gatos/gato3.png', pedido : 'gato'},
+    {url : 'Images/acessorios/animais/gatos/gato4.png', pedido : 'gato'},
+    {url : 'Images/acessorios/animais/gatos/gato5.png', pedido : 'gato'},
+    {url : 'Images/acessorios/animais/gatos/gato6.png', pedido : 'gato'},
+    {url : 'Images/acessorios/animais/caes/cao1.png', pedido : 'cao'},
+    {url : 'Images/acessorios/animais/caes/cao2.png', pedido : 'cao'},
+    {url : 'Images/acessorios/animais/caes/cao3.png', pedido : 'cao'},
+    {url : 'Images/acessorios/animais/caes/cao4.png', pedido : 'cao'},
+    {url : 'Images/acessorios/animais/caes/cao5.png', pedido : 'cao'},
+    //...
+
+    // Comidas
+    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'}
+    {url : 'Images/acessorios/acessorioscaes/comidacao.png', pedido : 'comida_cao'}
+    //...
+]
+
+
 /* Pega o div que contem os clientes */
 const div = document.getElementById('clientes');
 
@@ -15,7 +38,7 @@ let clientesInGame = [];
 /* Funcao de gerar um cliente */
 function generate(){
     if(clientesInGame.length >= 5) return; // Nao cria mais que 5 clientes)
-    
+
     /* Escolhe um cliente aleatoriamente */
     const random = clients[Math.floor(Math.random() * clients.length)];
 
