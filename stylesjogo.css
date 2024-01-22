@@ -14,7 +14,7 @@ body {
     max-width: 1800px; 
     height: 1000px;
     margin: 20px auto 0;
-    outline: 3px solid #fff;
+    outline: 6px solid #fff;
     overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
     background-color: bisque;
 }
@@ -36,7 +36,6 @@ body {
     left: 930px; /* 800px - 70px */
     transform: translate(-50%, -50%);
     width: 66px;
-    z-index: 2;
 }
 
 #zonacaes{
@@ -50,7 +49,7 @@ body {
     position: absolute;
     left: 540px;
     top: 490px;
-    width: 140px;
+    width: 130px;
 }
 
 #zonacoelhos{
@@ -71,7 +70,7 @@ body {
 
 #cao1 {
     position: absolute;
-    top: 490px;
+    top: 500px;
     left: 360px; /* 425px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -81,7 +80,7 @@ body {
 
 #cao2 {
     position: absolute;
-    top: 495px;
+    top: 500px;
     left: 430px; /* 425px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -90,7 +89,7 @@ body {
 
 #cao3 {
     position: absolute;
-    top: 550px;
+    top: 560px;
     left: 370px; /* 425px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -119,20 +118,43 @@ body {
 
 /* --------------------------------------- */
 
-#Coelho {
+#coelho1 {
     position: absolute;
-    top: 425px;
+    top: 750px;
     left: 355px; /* 425px - 70px */
     transform: translate(-50%, -50%);
     width: 55px;
-    z-index: 1;
+}
+
+#coelho2 {
+    position: absolute;
+    top: 760px;
+    left: 410px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 55px;
+}
+
+#coelho3 {
+    position: absolute;
+    top: 810px;
+    left: 355px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 55px;
+}
+
+#coelho4 {
+    position: absolute;
+    top: 800px;
+    left: 410px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 55px;
 }
 
 /* ---------------------------------------- */
 
 #gato1 {
     position: absolute;
-    top: 500px;
+    top: 520px;
     left: 575px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 55px;
@@ -140,7 +162,7 @@ body {
 
 #gato2 {
     position: absolute;
-    top: 500px;
+    top: 520px;
     left: 640px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -149,7 +171,7 @@ body {
 
 #gato3 {
     position: absolute;
-    top: 550px;
+    top: 560px;
     left: 575px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -158,7 +180,7 @@ body {
 
 #gato4 {
     position: absolute;
-    top: 550px;
+    top: 560px;
     left: 640px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -167,17 +189,16 @@ body {
 
 #gato5 {
     position: absolute;
-    top: 520px;
+    top: 540px;
     left: 610px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
-    z-index: 2;
 }
 
 #gato6 {
     position: absolute;
-    top: 580px;
+    top:590px;
     left: 610px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 50px;
@@ -186,13 +207,39 @@ body {
 
 /* ---------------------------------------- */
 
-#Hamster {
+#hamster1 {
     position: absolute;
-    top: 360px;
-    left: 300px; /* 370px - 70px */
+    top: 750px;
+    left: 530px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 70px;
 }
+
+#hamster2 {
+    position: absolute;
+    top: 750px;
+    left: 600px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 70px;
+}
+
+#hamster3 {
+    position: absolute;
+    top: 820px;
+    left: 590px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 70px;
+}
+
+#hamster4 {
+    position: absolute;
+    top: 820px;
+    left: 530px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 70px;
+}
+
+/* ------------------------------------------ */
 
 #Tapete_entrada {
     position: absolute;
@@ -204,7 +251,7 @@ body {
 
 #Caixa_Registadora {
     position: absolute;
-    top: 650px;
+    top: 550px;
     left: 940px; /* 805px - 70px */
     transform: translate(-50%, -50%);
     width: 120px;
