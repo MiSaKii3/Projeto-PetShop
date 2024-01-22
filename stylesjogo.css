@@ -44,7 +44,7 @@ body {
     top: 400px;
     left: 340px; /* 410px - 70px */
     transform: translate(-50%, -50%);
-    height: 200px;
+    width: 130px;
 }
 
 #Cão {
@@ -53,7 +53,6 @@ body {
     left: 355px; /* 425px - 70px */
     transform: translate(-50%, -50%);
     width: 60px;
-    height: 60px;
 }
 
 #Coelho {
@@ -62,7 +61,6 @@ body {
     left: 355px; /* 425px - 70px */
     transform: translate(-50%, -50%);
     width: 55px;
-    height: 55px;
     z-index: 1;
 }
 
@@ -72,7 +70,6 @@ body {
     left: 300px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 55px;
-    height: 55px;
 }
 
 #Hamster {
@@ -81,7 +78,6 @@ body {
     left: 300px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 70px;
-    height: 70px;
 }
 
 #Tapete_entrada {
@@ -94,10 +90,10 @@ body {
 
 #Caixa_Registadora {
     position: absolute;
-    top: 550px;
+    top: 650px;
     left: 940px; /* 805px - 70px */
     transform: translate(-50%, -50%);
-    width: 130px;
+    width: 120px;
 }
 
 /* Disposição da barra de moedas */
