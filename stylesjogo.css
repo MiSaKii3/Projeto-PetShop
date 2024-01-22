@@ -129,14 +129,64 @@ body {
     z-index: 1;
 }
 
-#Gato {
+/* ---------------------------------------- */
+
+#gato1 {
     position: absolute;
-    top: 430px;
-    left: 300px; /* 370px - 70px */
+    top: 500px;
+    left: 575px; /* 370px - 70px */
     transform: translate(-50%, -50%);
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
 }
+
+#gato2 {
+    position: absolute;
+    top: 500px;
+    left: 640px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#gato3 {
+    position: absolute;
+    top: 550px;
+    left: 575px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#gato4 {
+    position: absolute;
+    top: 550px;
+    left: 640px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#gato5 {
+    position: absolute;
+    top: 520px;
+    left: 610px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+#gato6 {
+    position: absolute;
+    top: 580px;
+    left: 610px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+/* ---------------------------------------- */
 
 #Hamster {
     position: absolute;
