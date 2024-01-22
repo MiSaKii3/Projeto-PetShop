@@ -13,6 +13,8 @@ body {
     width: 1500px; 
     max-width: 1800px; 
     height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
     margin: 20px auto 0;
     outline: 6px solid #fff;
     overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
@@ -71,7 +73,7 @@ body {
 #cao1 {
     position: absolute;
     top: 500px;
-    left: 360px; /* 425px - 70px */
+    left: 360px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -81,7 +83,7 @@ body {
 #cao2 {
     position: absolute;
     top: 500px;
-    left: 430px; /* 425px - 70px */
+    left: 430px; 
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -90,7 +92,7 @@ body {
 #cao3 {
     position: absolute;
     top: 560px;
-    left: 370px; /* 425px - 70px */
+    left: 370px; 
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -100,7 +102,7 @@ body {
 #cao4 {
     position: absolute;
     top: 550px;
-    left: 430px; /* 425px - 70px */
+    left: 430px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -110,7 +112,7 @@ body {
 #cao5 {
     position: absolute;
     top: 510px;
-    left: 390px; /* 425px - 70px */
+    left: 390px; 
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -121,7 +123,7 @@ body {
 #coelho1 {
     position: absolute;
     top: 750px;
-    left: 355px; /* 425px - 70px */
+    left: 355px; 
     transform: translate(-50%, -50%);
     width: 55px;
 }
@@ -129,7 +131,7 @@ body {
 #coelho2 {
     position: absolute;
     top: 760px;
-    left: 410px; /* 425px - 70px */
+    left: 410px;
     transform: translate(-50%, -50%);
     width: 55px;
 }
@@ -137,7 +139,7 @@ body {
 #coelho3 {
     position: absolute;
     top: 810px;
-    left: 355px; /* 425px - 70px */
+    left: 355px; 
     transform: translate(-50%, -50%);
     width: 55px;
 }
@@ -145,7 +147,7 @@ body {
 #coelho4 {
     position: absolute;
     top: 800px;
-    left: 410px; /* 425px - 70px */
+    left: 410px; 
     transform: translate(-50%, -50%);
     width: 55px;
 }
@@ -155,7 +157,7 @@ body {
 #gato1 {
     position: absolute;
     top: 520px;
-    left: 575px; /* 370px - 70px */
+    left: 575px; 
     transform: translate(-50%, -50%);
     width: 55px;
 }
@@ -163,7 +165,7 @@ body {
 #gato2 {
     position: absolute;
     top: 520px;
-    left: 640px; /* 370px - 70px */
+    left: 640px; 
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -172,7 +174,7 @@ body {
 #gato3 {
     position: absolute;
     top: 560px;
-    left: 575px; /* 370px - 70px */
+    left: 575px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -181,7 +183,7 @@ body {
 #gato4 {
     position: absolute;
     top: 560px;
-    left: 640px; /* 370px - 70px */
+    left: 640px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -190,7 +192,7 @@ body {
 #gato5 {
     position: absolute;
     top: 540px;
-    left: 610px; /* 370px - 70px */
+    left: 610px; 
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -199,7 +201,7 @@ body {
 #gato6 {
     position: absolute;
     top:590px;
-    left: 610px; /* 370px - 70px */
+    left: 610px; 
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -210,7 +212,7 @@ body {
 #hamster1 {
     position: absolute;
     top: 750px;
-    left: 530px; /* 370px - 70px */
+    left: 530px; 
     transform: translate(-50%, -50%);
     width: 70px;
 }
@@ -218,7 +220,7 @@ body {
 #hamster2 {
     position: absolute;
     top: 750px;
-    left: 600px; /* 370px - 70px */
+    left: 600px; 
     transform: translate(-50%, -50%);
     width: 70px;
 }
@@ -226,7 +228,7 @@ body {
 #hamster3 {
     position: absolute;
     top: 820px;
-    left: 590px; /* 370px - 70px */
+    left: 590px;
     transform: translate(-50%, -50%);
     width: 70px;
 }
@@ -234,25 +236,36 @@ body {
 #hamster4 {
     position: absolute;
     top: 820px;
-    left: 530px; /* 370px - 70px */
+    left: 530px; 
     transform: translate(-50%, -50%);
     width: 70px;
 }
 
 /* ------------------------------------------ */
 
+.fullscreen{
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+
+
+
+
 #Tapete_entrada {
     position: absolute;
-    top: 890px;
-    left: 703px; /* 632px - 70px */
+    top: 900px;
+    left: 703px; 
     transform: translate(-50%, -50%);
-    width: 100px;
+    width: 80px;
 }
 
 #Caixa_Registadora {
     position: absolute;
     top: 550px;
-    left: 940px; /* 805px - 70px */
+    left: 940px; 
     transform: translate(-50%, -50%);
     width: 120px;
 }
