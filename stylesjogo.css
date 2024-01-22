@@ -39,21 +39,85 @@ body {
     width: 66px;
 }
 
-#Tapete_animais {
+#zonacaes{
     position: absolute;
-    top: 400px;
-    left: 340px; /* 410px - 70px */
-    transform: translate(-50%, -50%);
     width: 130px;
+    left: 330px;
+    top: 20px;
 }
 
-#Cão {
+#zonagatos{
     position: absolute;
-    top: 360px;
-    left: 355px; /* 425px - 70px */
-    transform: translate(-50%, -50%);
-    width: 60px;
+    width: 130px;
+    left: 540px;
+    top: 40px;
 }
+
+#zonacoelhos{
+    position: absolute;
+    width: 130px;
+    left: 320px;
+    top: 250px;
+}
+
+#zonahamsters{
+    position: absolute;
+    width: 130px;
+    left: 500px;
+    top: 260px;
+}
+
+/* --------------------------------------- */
+
+#cao1 {
+    position: absolute;
+    top: 490px;
+    left: 360px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+
+#cao2 {
+    position: absolute;
+    top: 495px;
+    left: 430px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#cao3 {
+    position: absolute;
+    top: 550px;
+    left: 370px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+
+#cao4 {
+    position: absolute;
+    top: 550px;
+    left: 430px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+
+#cao5 {
+    position: absolute;
+    top: 510px;
+    left: 390px; /* 425px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+/* --------------------------------------- */
 
 #Coelho {
     position: absolute;
@@ -64,13 +128,63 @@ body {
     z-index: 1;
 }
 
-#Gato {
+/* ---------------------------------------- */
+
+#gato1 {
     position: absolute;
-    top: 430px;
-    left: 300px; /* 370px - 70px */
+    top: 500px;
+    left: 575px; /* 370px - 70px */
     transform: translate(-50%, -50%);
     width: 55px;
 }
+
+#gato2 {
+    position: absolute;
+    top: 500px;
+    left: 640px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#gato3 {
+    position: absolute;
+    top: 550px;
+    left: 575px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#gato4 {
+    position: absolute;
+    top: 550px;
+    left: 640px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+#gato5 {
+    position: absolute;
+    top: 520px;
+    left: 610px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+#gato6 {
+    position: absolute;
+    top: 580px;
+    left: 610px; /* 370px - 70px */
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+}
+
+/* ---------------------------------------- */
 
 #Hamster {
     position: absolute;
