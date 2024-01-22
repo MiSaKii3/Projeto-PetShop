@@ -38,6 +38,7 @@ body {
     left: 930px; /* 800px - 70px */
     transform: translate(-50%, -50%);
     width: 66px;
+    z-index: 3;
 }
 
 #zonacaes{
@@ -248,12 +249,6 @@ body {
     height: 100vh;
 }
 
-
-
-
-
-
-
 #Tapete_entrada {
     position: absolute;
     top: 900px;
@@ -268,6 +263,7 @@ body {
     left: 940px; 
     transform: translate(-50%, -50%);
     width: 120px;
+    z-index: 4;
 }
 
 /* Disposição da barra de moedas */
@@ -299,6 +295,17 @@ body {
     transform: translate(-90%, -150%);
     font-weight: bold;
     font-size: 26px;
+}
+
+/* Disposição do contador de tempo */
+#dinheiroTotal {
+    z-index: 2;
+    position: absolute;
+    top: 160px;
+    left: 210px;
+    transform: translate(-90%, -150%);
+    font-weight: bold;
+    font-size: 26px;
 
 }
 
@@ -318,3 +325,23 @@ body {
     transform: translate(-50%, -50%);
     width: 40px;
 }
+
+#coolButton {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #000000;
+      border: none;
+      border-radius: 5px;
+      font-size: 48px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      width: 100px;
+      height: 100px;
+    }
+
+    #coolButton:hover {
+      background-color: #2980b9;
+    }

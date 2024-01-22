@@ -8,15 +8,18 @@
     <link rel="icon" type="image/x-icon" href="Images/icon.ico">
     <link href="stylesjogo.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
-
-
+    <button id="coolButton" onclick="Home();"><i class='bx bxs-home' ></i></button>
     <div class="game-container">
 
         <!-- Contador de tempo -->
         <div id="contador">00:00:00</div>
+
+        <!-- Contador de dinheiro -->
+        <div id="dinheiroTotal">0</div>
 
         <!-- Imagens -->
         <img src="Images/DemoLower.png" alt="PetShop room" id="Image_room">
@@ -28,8 +31,8 @@
 
         <img src="Images/Main_Character.png" alt="Personagem principal" id="Main_Character">
 
-        <div>
-            <img class= "zonaanimais" src="Images/Zona animais/zonacaes.png" id="zonacaes">
+        <div class= "zonaanimais">
+            <img src="Images/Zona animais/zonacaes.png" id="zonacaes">
             <img class="objeto" src="Images/acessorios/animais/caes/cao3.png" alt="Cão" id="cao3">
             <img class="objeto" src="Images/acessorios/animais/caes/cao1.png" alt="Cão" id="cao1">
             <img class="objeto" src="Images/acessorios/animais/caes/cao2.png" alt="Cão" id="cao2">
@@ -37,8 +40,8 @@
             <img class="objeto" src="Images/acessorios/animais/caes/cao5.png" alt="Cão" id="cao5">
         </div>
 
-        <div>
-            <img class= "zonaanimais" src="Images/Zona animais/zonagatos.png" id="zonagatos">
+        <div class= "zonaanimais">
+            <img src="Images/Zona animais/zonagatos.png" id="zonagatos">
             <img class="objeto" src="Images/acessorios/animais/gatos/gato1.png" alt="Gato" id="gato1">
             <img class="objeto" src="Images/acessorios/animais/gatos/gato2.png" alt="Gato" id="gato2">
             <img class="objeto" src="Images/acessorios/animais/gatos/gato3.png" alt="Gato" id="gato3">
@@ -47,33 +50,35 @@
             <img class="objeto" src="Images/acessorios/animais/gatos/gato6.png" alt="Gato" id="gato6">
         </div>
 
-        <div>
-            <img class= "zonaanimais" class= "zonaanimais" src="Images/Zona animais/zonacoelhos.png" id="zonacoelhos">
+        <div class= "zonaanimais">
+            <img src="Images/Zona animais/zonacoelhos.png" id="zonacoelhos">
             <img class="objeto" src="Images/acessorios/animais/coelhos/coelho3.png" alt="Coelho" id="coelho3">
             <img class="objeto" src="Images/acessorios/animais/coelhos/coelho2.png" alt="Coelho" id="coelho2">
             <img class="objeto" src="Images/acessorios/animais/coelhos/coelho4.png" alt="Coelho" id="coelho4">
             <img class="objeto" src="Images/acessorios/animais/coelhos/coelho1.png" alt="Coelho" id="coelho1">
         </div>
 
-        <div>
-            <img class= "zonaanimais" src="Images/Zona animais/zonahasmters.png" id="zonahamsters">
+        <div class= "zonaanimais" >
+            <img src="Images/Zona animais/zonahasmters.png" id="zonahamsters">
             <img class="objeto" src="Images/acessorios/animais/hamster/hamster.png" alt="Hamster" id="hamster1">
             <img class="objeto" src="Images/acessorios/animais/hamster/hamster.png" alt="Hamster" id="hamster2">
             <img class="objeto" src="Images/acessorios/animais/hamster/hamster.png" alt="Hamster" id="hamster3">
             <img class="objeto" src="Images/acessorios/animais/hamster/hamster.png" alt="Hamster" id="hamster4">
         </div>
 
-        <input type="button" id= "sairfullscreen">
 
         <img src="Images/Tapete_entrada.png" alt="Tapete_entrada" id="Tapete_entrada">
 
-        <img class="objeto" src="Images/caixaregistradora.png" alt="Caixa_Registadora" id="Caixa_Registadora">
+        <img src="Images/caixaregistradora.png" alt="Caixa_Registadora" id="Caixa_Registadora">
 
     </div>
 
     <!-- Scripts -->
     <script src="ContadorTempo.js"></script>
     <script src="Movement.js"></script>
+    <script src="Alimentar.js"></script>
+    <script src="Logar.js"></script>
+    <script src="GeradorClientes.js"></script>
 
 </body>
 

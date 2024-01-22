@@ -27,3 +27,7 @@ function Login() {
     alert("Username ou Password incorretas");
     return false;
 }
+
+function Home(){
+    window.location.href = "index.html";
+}
