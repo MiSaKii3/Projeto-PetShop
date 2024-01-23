@@ -23,7 +23,7 @@ const pedidos = [
     //...
 
     // Comidas
-    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'}
+    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'},
     {url : 'Images/acessorios/acessorioscaes/comidacao.png', pedido : 'comida_cao'}
     //...
 ]

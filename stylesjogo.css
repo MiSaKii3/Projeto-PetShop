@@ -360,3 +360,35 @@ body {
     transform: translate(-50%, -50%);
     width: 80px;
 }
+
+/* Disposição da pequena história que vai aparecer no início do jogo */
+.frase-1{
+    position: absolute;
+    top: 190px;
+    left: 290px;
+    background-color: #6b5f4c;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.frase-2{
+    position: absolute;
+    top: 190px;
+    left: 290px;
+    background-color: #6b5f4c;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .frase-3{
+    position: absolute;
+    top: 190px;
+    left: 290px;
+    background-color: #6b5f4c;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
