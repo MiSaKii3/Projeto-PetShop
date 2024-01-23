@@ -279,8 +279,8 @@ body {
 
 #tacacoelho {
     position: absolute;
-    top: 830px;
-    left: 410px; 
+    top: 810px;
+    left: 390px; 
     width: 45px;
 }
 
@@ -292,21 +292,23 @@ body {
     width: 50px;
     left: 1060px;
     top: 380px;
+    z-index: 2;
 }
 
 #comidagato{
     position: absolute;
     transform: translate(-50%, -50%);
-    width: 50px;
-    left: 1105px;
-    top: 380px;
+    width: 53px;
+    left: 1140px;
+    top: 390px;
+    z-index: 2;
 }
 
 #comidacoelho{
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
-    left: 1160px;
+    left: 1180px;
     top: 380px;
 }
 
@@ -314,8 +316,9 @@ body {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
-    left: 1105px;
-    top: 380px;
+    left: 1100px;
+    top: 400px;
+    z-index: 2;
 }
 
 /* --------------------------------------- */
@@ -421,7 +424,7 @@ body {
     position: absolute;
     top: 880px;
     transform: translate(-50%, -50%);
-    width: 80px;
+    width: 75px;
 }
 
 /* Disposição da pequena história que vai aparecer no início do jogo */

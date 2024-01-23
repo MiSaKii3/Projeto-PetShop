@@ -46,11 +46,12 @@ const pedidos = [
     {url : 'Images/acessorios/animais/hamster/hamster5.png', pedido : 'hamster'},
 
     // Comidas
-    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'}
-    {url : 'Images/acessorios/acessorioscaes/comidacao.png', pedido : 'comida_cao'}
+    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'},
+    {url : 'Images/acessorios/acessorioscaes/comidacao.png', pedido : 'comida_cao'},
+    {url : 'Images/acessorios/acessorioscoelhos/comidacoelho.png', pedido : 'comida_coelho'},
+    {url : 'Images/acessorios/acessorioshamsters/comidahamster.png', pedido : 'comida_hamster'}
     //...
 ]
-
 
 /* Pega o div que contem os clientes */
 const div = document.getElementById('clientes');

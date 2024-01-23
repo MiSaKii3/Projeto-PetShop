@@ -20,7 +20,7 @@ function Login() {
 
     if(user.value == "" || pass.value == "")
     {
-        alert("Todos os campos não estão preenchidos");
+        alert("Preencha os campos");
         return false;
     }
 
