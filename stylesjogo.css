@@ -38,7 +38,7 @@ body {
     left: 930px; /* 800px - 70px */
     transform: translate(-50%, -50%);
     width: 66px;
-    z-index: 3;
+    z-index: 4;
 }
 
 #zonacaes{
@@ -425,6 +425,20 @@ body {
     top: 880px;
     transform: translate(-50%, -50%);
     width: 75px;
+}
+
+#pedido {
+    position: absolute;
+    top: 830px;
+    transform: translate(-50%, -50%);
+    width: 30px;
+}
+
+#balao {
+    position: absolute;
+    top: 830px;
+    transform: translate(-50%, -50%);
+    width: 100px;
 }
 
 /* Disposição da pequena história que vai aparecer no início do jogo */

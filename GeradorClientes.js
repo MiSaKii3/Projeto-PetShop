@@ -57,30 +57,93 @@ const pedidos = [
 const div = document.getElementById('clientes');
 
 /* Array que guarda os clientes que ja foram gerados */
-let clientesInGame = [];
+let clientesInGame = [null, null, null, null, null]; // Nao cria mais que 5 clientes)
 
 /* Funcao de gerar um cliente */
 function generate(){
-    if(clientesInGame.length >= 5) return; // Nao cria mais que 5 clientes)
+    
+    console.log(clientesInGame);
+    let lugar = procuraLugarParaCliente();
+    if(lugar == -1) return;  // Nao havia lugar :(
+
+    const clientDiv = document.createElement('div');
+    clientDiv.id = 'cliente_' + lugar;
+    
 
     /* Escolhe um cliente aleatoriamente */
-    const random = clients[Math.floor(Math.random() * clients.length)];
+    const randomC = clients[Math.floor(Math.random() * clients.length)];
 
     /* Cria o elemento de imagem e adiciona a pagina */
-    const imgElement = document.createElement('img');
-    imgElement.src = random.url;
-    imgElement.alt = random.name;
-    imgElement.style.zIndex = '3'; // Para nao ficar atras do cenario
-    imgElement.id = "cliente"; // Para ser aplicado os efeitos do css com este id
+    const cliente = createCliente();
+
+    const pedido = createPedido();
+
+    const balao_de_fala = createBalaoDeFala();
 
     // Posiciona o cliente na tela dependendo de quantos clientes ja existem
-    imgElement.style.left = (750 + 100*clientesInGame.length) + 'px'; 
+    balao_de_fala.style.left = (700 + 100*lugar) + 'px';
+    // Posiciona o cliente na tela dependendo de quantos clientes ja existem
+    pedido.style.left = (700 + 100*lugar) + 'px'; 
+    // Posiciona o cliente na tela dependendo de quantos clientes ja existem
+    cliente.style.left = (750 + 100*lugar) + 'px'; 
 
     // Adiciona o cliente ao array de clientes gerados e a pagina
-    div.appendChild(imgElement);
-    clientesInGame.push(imgElement);
+    clientDiv.appendChild(cliente);
+    clientDiv.appendChild(pedido);
+    clientDiv.appendChild(balao_de_fala);
+    div.appendChild(clientDiv);
+    clientesInGame[lugar] = clientDiv;
+
+    // Se o cliente for clicado, remove-se (Para testes)
+    clientDiv.onclick = function(){
+        div.removeChild(clientDiv);
+        clientesInGame[lugar] = null;
+
+        // Adiciona dinheiro
+        const money = document.getElementById('dinheiroTotal');
+        money.innerText = parseInt(money.innerText) + 10;
+    }
 }
 
+function createCliente(){
+    const randomC = clients[Math.floor(Math.random() * clients.length)];
+
+    const cliente = document.createElement('img');
+    cliente.src = randomC.url;
+    cliente.alt = randomC.name;
+    cliente.style.zIndex = '5'; // Para nao ficar atras do cenario
+    cliente.id = "cliente"; // Para ser aplicado os efeitos do css com este id
+    return cliente;
+}
+
+function createPedido(){
+    const pedido = document.createElement('img');
+    const randomPedido = pedidos[Math.floor(Math.random() * pedidos.length)];
+    pedido.src = randomPedido.url;
+    pedido.alt = randomPedido.pedido;
+    pedido.style.zIndex = '3'; // Para nao ficar atras do cenario
+    pedido.id = "pedido"; // Para ser aplicado os efeitos do css com este id
+    return pedido;
+}
+
+function createBalaoDeFala(){
+    const balao_de_fala = document.createElement('img');
+    balao_de_fala.src = 'Images/Clientes/bolha-de-texto.png';
+    balao_de_fala.alt = 'bolha de texto';
+    balao_de_fala.id = "balao"; // Para ser aplicado os efeitos do css com este id 
+    balao_de_fala.style.zIndex = '2'; // Para nao ficar atras do cenario mas atras do pedido
+    return balao_de_fala;
+}
+
+function procuraLugarParaCliente(){
+    for(let lugar_n = 0; lugar_n < clientesInGame.length; lugar_n++){ 
+        // Se nao estiver nenhum cliente la, retorna o numero do lugar
+        if(clientesInGame[lugar_n] == null){
+            return lugar_n;
+        }
+    }
+    return -1;
+}
 setInterval(generate, 1000); // Cria um cliente a cada 1 segundos
 
 
