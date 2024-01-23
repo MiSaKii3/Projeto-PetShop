@@ -119,14 +119,6 @@ body {
     height: 50px;
 }
 
-#tacacao {
-    position: absolute;
-    top: 580px;
-    left: 420px; 
-    transform: translate(-50%, -50%);
-    width: 45px;
-}
-
 /* --------------------------------------- */
 
 #coelho1 {
@@ -156,14 +148,6 @@ body {
 #coelho4 {
     position: absolute;
     top: 780px;
-    left: 410px; 
-    transform: translate(-50%, -50%);
-    width: 45px;
-}
-
-#tacacoelho {
-    position: absolute;
-    top: 830px;
     left: 410px; 
     transform: translate(-50%, -50%);
     width: 45px;
@@ -225,14 +209,6 @@ body {
     z-index: 2;
 }
 
-#tacagato {
-    position: absolute;
-    top:600px;
-    left: 630px; 
-    transform: translate(-50%, -50%);
-    width: 45px;
-}
-
 /* ---------------------------------------- */
 
 #hamster1 {
@@ -275,6 +251,16 @@ body {
     width: 35px;
 }
 
+/* ------------------------------------------ */
+
+#tacacao {
+    position: absolute;
+    top: 580px;
+    left: 420px; 
+    transform: translate(-50%, -50%);
+    width: 45px;
+}
+
 #tacahamster{
     position: absolute;
     top: 830px;
@@ -283,12 +269,56 @@ body {
     width: 45px;
 }
 
-/* ------------------------------------------ */
-
-.fullscreen{
-    width: 100%;
-    height: 100vh;
+#tacagato {
+    position: absolute;
+    top:600px;
+    left: 630px; 
+    transform: translate(-50%, -50%);
+    width: 45px;
 }
+
+#tacacoelho {
+    position: absolute;
+    top: 830px;
+    left: 410px; 
+    width: 45px;
+}
+
+/* --------------------------------------- */
+
+#comidacao{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1060px;
+    top: 380px;
+}
+
+#comidagato{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1105px;
+    top: 380px;
+}
+
+#comidacoelho{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1160px;
+    top: 380px;
+}
+
+#comidahamster{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1105px;
+    top: 380px;
+}
+
+/* --------------------------------------- */
 
 #Tapete_entrada {
     position: absolute;
