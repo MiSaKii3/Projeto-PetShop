@@ -92,7 +92,7 @@ body {
 
 #cao3 {
     position: absolute;
-    top: 560px;
+    top: 550px;
     left: 370px; 
     transform: translate(-50%, -50%);
     width: 50px;
@@ -102,7 +102,7 @@ body {
 
 #cao4 {
     position: absolute;
-    top: 550px;
+    top: 530px;
     left: 430px;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -123,34 +123,34 @@ body {
 
 #coelho1 {
     position: absolute;
-    top: 750px;
+    top: 748px;
     left: 355px; 
     transform: translate(-50%, -50%);
-    width: 55px;
+    width: 45px;
 }
 
 #coelho2 {
     position: absolute;
-    top: 760px;
+    top: 750px;
     left: 410px;
     transform: translate(-50%, -50%);
-    width: 55px;
+    width: 45px;
 }
 
 #coelho3 {
     position: absolute;
-    top: 810px;
-    left: 355px; 
+    top: 790px;
+    left: 370px; 
     transform: translate(-50%, -50%);
-    width: 55px;
+    width: 45px;
 }
 
 #coelho4 {
     position: absolute;
-    top: 800px;
+    top: 780px;
     left: 410px; 
     transform: translate(-50%, -50%);
-    width: 55px;
+    width: 45px;
 }
 
 /* ---------------------------------------- */
@@ -160,7 +160,8 @@ body {
     top: 520px;
     left: 575px; 
     transform: translate(-50%, -50%);
-    width: 55px;
+    width: 50px;
+    z-index: 1;
 }
 
 #gato2 {
@@ -169,7 +170,7 @@ body {
     left: 640px; 
     transform: translate(-50%, -50%);
     width: 50px;
-    height: 50px;
+    z-index: 1;
 }
 
 #gato3 {
@@ -178,7 +179,7 @@ body {
     left: 575px;
     transform: translate(-50%, -50%);
     width: 50px;
-    height: 50px;
+    z-index: 2;
 }
 
 #gato4 {
@@ -187,7 +188,7 @@ body {
     left: 640px;
     transform: translate(-50%, -50%);
     width: 50px;
-    height: 50px;
+    z-index: 2;
 }
 
 #gato5 {
@@ -196,16 +197,16 @@ body {
     left: 610px; 
     transform: translate(-50%, -50%);
     width: 50px;
-    height: 50px;
+    z-index: 1;
 }
 
 #gato6 {
     position: absolute;
     top:590px;
-    left: 610px; 
+    left: 580px; 
     transform: translate(-50%, -50%);
     width: 50px;
-    height: 50px;
+    z-index: 2;
 }
 
 /* ---------------------------------------- */
@@ -228,15 +229,15 @@ body {
 
 #hamster3 {
     position: absolute;
-    top: 820px;
-    left: 590px;
+    top: 800px;
+    left: 603px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
 
 #hamster4 {
     position: absolute;
-    top: 820px;
+    top: 800px;
     left: 530px; 
     transform: translate(-50%, -50%);
     width: 35px;
@@ -244,7 +245,7 @@ body {
 
 #hamster5 {
     position: absolute;
-    top: 780px;
+    top: 766px;
     left: 565px; 
     transform: translate(-50%, -50%);
     width: 35px;
@@ -252,10 +253,72 @@ body {
 
 /* ------------------------------------------ */
 
-.fullscreen{
-    width: 100%;
-    height: 100vh;
+#tacacao {
+    position: absolute;
+    top: 580px;
+    left: 420px; 
+    transform: translate(-50%, -50%);
+    width: 45px;
 }
+
+#tacahamster{
+    position: absolute;
+    top: 830px;
+    left: 565px; 
+    transform: translate(-50%, -50%);
+    width: 45px;
+}
+
+#tacagato {
+    position: absolute;
+    top:600px;
+    left: 630px; 
+    transform: translate(-50%, -50%);
+    width: 45px;
+}
+
+#tacacoelho {
+    position: absolute;
+    top: 830px;
+    left: 410px; 
+    width: 45px;
+}
+
+/* --------------------------------------- */
+
+#comidacao{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1060px;
+    top: 380px;
+}
+
+#comidagato{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1105px;
+    top: 380px;
+}
+
+#comidacoelho{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1160px;
+    top: 380px;
+}
+
+#comidahamster{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    left: 1105px;
+    top: 380px;
+}
+
+/* --------------------------------------- */
 
 #Tapete_entrada {
     position: absolute;

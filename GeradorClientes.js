@@ -4,6 +4,17 @@ const clients = [
     {url : 'Images/Clientes/tile002.png', name : 'tile002'},
     {url : 'Images/Clientes/tile003.png', name : 'tile003'},
     {url : 'Images/Clientes/tile004.png', name : 'tile004'},
+    {url : 'Images/Clientes/tile005.png', name : 'tile005'},
+    {url : 'Images/Clientes/tile006.png', name : 'tile006'},
+    {url : 'Images/Clientes/tile007.png', name : 'tile007'},
+    {url : 'Images/Clientes/tile008.png', name : 'tile008'},
+    {url : 'Images/Clientes/tile009.png', name : 'tile009'},
+    {url : 'Images/Clientes/tile010.png', name : 'tile010'},
+    {url : 'Images/Clientes/tile011.png', name : 'tile011'},
+    {url : 'Images/Clientes/tile012.png', name : 'tile012'},
+    {url : 'Images/Clientes/tile013.png', name : 'tile013'},
+    {url : 'Images/Clientes/tile014.png', name : 'tile014'},
+    {url : 'Images/Clientes/tile015.png', name : 'tile015'},
 ];
 
 /* pedidos possiveis que os clientes facam */
@@ -15,15 +26,27 @@ const pedidos = [
     {url : 'Images/acessorios/animais/gatos/gato4.png', pedido : 'gato'},
     {url : 'Images/acessorios/animais/gatos/gato5.png', pedido : 'gato'},
     {url : 'Images/acessorios/animais/gatos/gato6.png', pedido : 'gato'},
+
     {url : 'Images/acessorios/animais/caes/cao1.png', pedido : 'cao'},
     {url : 'Images/acessorios/animais/caes/cao2.png', pedido : 'cao'},
     {url : 'Images/acessorios/animais/caes/cao3.png', pedido : 'cao'},
     {url : 'Images/acessorios/animais/caes/cao4.png', pedido : 'cao'},
     {url : 'Images/acessorios/animais/caes/cao5.png', pedido : 'cao'},
+
+    {url : 'Images/acessorios/animais/coelhos/coelho1.png', pedido : 'coelho'},
+    {url : 'Images/acessorios/animais/coelhos/coelho2.png', pedido : 'coelho'},
+    {url : 'Images/acessorios/animais/coelhos/coelho3.png', pedido : 'coelho'},
+    {url : 'Images/acessorios/animais/coelhos/coelho4.png', pedido : 'coelho'},
     //...
 
+    {url : 'Images/acessorios/animais/hamster/hamster1.png', pedido : 'hamster'},
+    {url : 'Images/acessorios/animais/hamster/hamster2.png', pedido : 'hamster'},
+    {url : 'Images/acessorios/animais/hamster/hamster3.png', pedido : 'hamster'},
+    {url : 'Images/acessorios/animais/hamster/hamster4.png', pedido : 'hamster'},
+    {url : 'Images/acessorios/animais/hamster/hamster5.png', pedido : 'hamster'},
+
     // Comidas
-    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'},
+    {url : 'Images/acessorios/acessoriosgatos/comidagato.png', pedido : 'comida_gato'}
     {url : 'Images/acessorios/acessorioscaes/comidacao.png', pedido : 'comida_cao'}
     //...
 ]
@@ -57,6 +80,6 @@ function generate(){
     clientesInGame.push(imgElement);
 }
 
-setInterval(generate, 1000); // Cria um cliente a cada 5 segundos
+setInterval(generate, 1000); // Cria um cliente a cada 1 segundos
 
 
