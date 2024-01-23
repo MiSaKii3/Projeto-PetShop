@@ -428,33 +428,17 @@ body {
 }
 
 /* Disposição da pequena história que vai aparecer no início do jogo */
-.frase-1{
+
+
+  .frases{
+    display: none;
+    padding: 20px;
+    background-color: #6b5f4c;
+    color: #fff;
+    border-radius: 6px;
     position: absolute;
     top: 190px;
     left: 290px;
-    background-color: #6b5f4c;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
     cursor: pointer;
-  }
-.frase-2{
-    position: absolute;
-    top: 190px;
-    left: 290px;
-    background-color: #6b5f4c;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
     cursor: pointer;
-  }
-  .frase-3{
-    position: absolute;
-    top: 190px;
-    left: 290px;
-    background-color: #6b5f4c;
-    color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+}

@@ -74,7 +74,7 @@ function generate(){
     imgElement.id = "cliente"; // Para ser aplicado os efeitos do css com este id
 
     // Posiciona o cliente na tela dependendo de quantos clientes ja existem
-    imgElement.style.left = (700 + 100*clientesInGame.length) + 'px'; 
+    imgElement.style.left = (750 + 100*clientesInGame.length) + 'px'; 
 
     // Adiciona o cliente ao array de clientes gerados e a pagina
     div.appendChild(imgElement);
