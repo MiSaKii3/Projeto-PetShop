@@ -4,6 +4,9 @@ var elements = document.getElementsByClassName("zonaanimais")
 
 for(e in elements){
     elements[e].onclick = function() {
-        confirm("Queres alimentar?");
+        if(confirm("Queres alimentar?"))
+            alert("yey")
+        else
+            alert(":(")
     }
 }

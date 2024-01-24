@@ -62,7 +62,7 @@ let clientesInGame = [null, null, null, null, null]; // Nao cria mais que 5 clie
 /* Funcao de gerar um cliente */
 function generate(){
     
-    console.log(clientesInGame);
+    //console.log(clientesInGame);
     let lugar = procuraLugarParaCliente();
     if(lugar == -1) return;  // Nao havia lugar :(
 
@@ -80,29 +80,51 @@ function generate(){
 
     const balao_de_fala = createBalaoDeFala();
 
+    const temporizador = CriarTemp();
+
     // Posiciona o cliente na tela dependendo de quantos clientes ja existem
     balao_de_fala.style.left = (700 + 100*lugar) + 'px';
     // Posiciona o cliente na tela dependendo de quantos clientes ja existem
     pedido.style.left = (700 + 100*lugar) + 'px'; 
     // Posiciona o cliente na tela dependendo de quantos clientes ja existem
     cliente.style.left = (750 + 100*lugar) + 'px'; 
+    // Posiciona o temporizador na tela dependendo de quantos clientes ja existem
+    temporizador.style.left = (775 + 100*lugar) + 'px'; 
 
     // Adiciona o cliente ao array de clientes gerados e a pagina
     clientDiv.appendChild(cliente);
     clientDiv.appendChild(pedido);
     clientDiv.appendChild(balao_de_fala);
+    clientDiv.appendChild(temporizador);
     div.appendChild(clientDiv);
     clientesInGame[lugar] = clientDiv;
+
+    // Se o tempo acabar, remove-se
+    var timer = setInterval(function(){
+        if(temporizador.textContent == 1){
+            div.removeChild(clientDiv);
+            clientesInGame[lugar] = null;
+            // Remove dinheiro
+            const money = document.getElementById('dinheiroTotal');
+            money.textContent = parseInt(money.textContent) - 5;
+            clearInterval(timer);
+        }
+        else{
+            temporizador.textContent = parseInt(temporizador.textContent) - 1;
+        }
+    } , 1000);
 
     // Se o cliente for clicado, remove-se (Para testes)
     clientDiv.onclick = function(){
         div.removeChild(clientDiv);
         clientesInGame[lugar] = null;
-
+        clearInterval(timer);
         // Adiciona dinheiro
         const money = document.getElementById('dinheiroTotal');
         money.textContent = parseInt(money.textContent) + 10;
     }
+
+    
 }
 
 function createCliente(){
@@ -135,6 +157,16 @@ function createBalaoDeFala(){
     return balao_de_fala;
 }
 
+function CriarTemp(){
+    const temporizador = document.createElement('div');
+    temporizador.textContent = '10';
+    temporizador.id = 'temporizador';
+    temporizador.style.zIndex = '6';
+    temporizador.style.fontWeight = 'bold';
+
+    return temporizador;
+}
+
 function procuraLugarParaCliente(){
     for(let lugar_n = 0; lugar_n < clientesInGame.length; lugar_n++){ 
         // Se nao estiver nenhum cliente la, retorna o numero do lugar
@@ -144,6 +176,13 @@ function procuraLugarParaCliente(){
     }
     return -1;
 }
+
+function temporizadorDecrease(clienteDiv){
+
+}
+
 setInterval(generate, 1000); // Cria um cliente a cada 1 segundos
+
+
 
 

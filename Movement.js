@@ -1,5 +1,5 @@
 var objetos = document.getElementsByClassName("objeto");
-console.log(objetos);
+//console.log(objetos);
 
 var limit_down = 890;
 var limit_up = 360;
@@ -32,7 +32,7 @@ function verifyCollision(player_x, player_y, objeto) {
     var playerHeight = playerWidth * (player.naturalHeight/player.naturalWidth);
     // Just in case we have to log anything
     
-    console.log(player_x, player_y);
+    //console.log(player_x, player_y);
     if(false){
         console.log(objeto.id);
         console.log(player_x, player_y);

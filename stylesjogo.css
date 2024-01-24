@@ -371,7 +371,7 @@ body {
     font-size: 26px;
 }
 
-/* Disposição do contador de tempo */
+/* Disposição do dinheiro */
 #dinheiroTotal {
     z-index: 2;
     position: absolute;
@@ -423,6 +423,13 @@ body {
 #cliente {
     position: absolute;
     top: 880px;
+    transform: translate(-50%, -50%);
+    width: 75px;
+}
+
+#temporizador {
+    position: absolute;
+    top: 930px;
     transform: translate(-50%, -50%);
     width: 75px;
 }
