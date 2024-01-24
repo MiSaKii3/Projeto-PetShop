@@ -13,7 +13,7 @@
 
 <body>
     <button id="coolButton" onclick="Home();"><i class='bx bxs-home' ></i></button>
-    <div class="game-container">
+    <div class="game-container" ondragover="allowDrop(event)">
 
         <!-- Contador de tempo -->
         <div id="contador">00:00:00</div>
@@ -76,10 +76,10 @@
         <img src="Images/caixaregistradora.png" alt="Caixa_Registadora" id="Caixa_Registadora">
 
         <div class="zonacomidas">
-            <img src="Images/acessorios/acessorioscaes/comidacao.png" id="comidacao">
-            <img src="Images/acessorios/acessoriosgatos/comidagato.png" id="comidagato">
-            <img src="Images/acessorios/acessorioscoelhos/comidacoelho.png" id="comidacoelho">
-            <img src="Images/acessorios/acessorioshamsters/comidahamster.png" id="comidahamster">
+            <img class="arrastaveis" src="Images/acessorios/acessorioscaes/comidacao.png" id="comidacao">
+            <img class="arrastaveis" src="Images/acessorios/acessoriosgatos/comidagato.png" id="comidagato">
+            <img class="arrastaveis" src="Images/acessorios/acessorioscoelhos/comidacoelho.png" id="comidacoelho">
+            <img class="arrastaveis" src="Images/acessorios/acessorioshamsters/comidahamster.png" id="comidahamster">
         </div>
 
         <div id = "clientes">
@@ -100,6 +100,7 @@
     <script src="Logar.js"></script>
     <script src="GeradorClientes.js"></script>
     <script src="HistoriaInicial.js"></script>
+    <script src="Arrastar.js"></script>
 
 </body>
 
