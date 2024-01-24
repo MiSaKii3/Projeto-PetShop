@@ -189,7 +189,8 @@ var comidas = [
     "comidacao",
     "comidagato",
     "comidacoelho",
-    "comidahamster"
+    "comidahamster",
+    "hamster1"
 ];
 function onDrop(event, timer) {
     event.preventDefault();
