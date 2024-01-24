@@ -114,14 +114,11 @@ function generate(){
         }
     } , 1000);
 
-    // Se o cliente for clicado, remove-se (Para testes)
-    clientDiv.onclick = function(){
-        div.removeChild(clientDiv);
-        clientesInGame[lugar] = null;
-        clearInterval(timer);
-        // Adiciona dinheiro
-        const money = document.getElementById('dinheiroTotal');
-        money.textContent = parseInt(money.textContent) + 10;
+    clientDiv.ondrop = function(event){
+        onDrop(event, timer);
+    }
+    clientDiv.ondragover = function(event){
+        allowDrop(event);
     }
 
     
@@ -183,6 +180,46 @@ function temporizadorDecrease(clienteDiv){
 
 setInterval(generate, 1000); // Cria um cliente a cada 1 segundos
 
+// Funcoes para os clientes quando lhes dropam comida
+
+function allowDrop(event) {
+    event.preventDefault();
+}
+var comidas = [
+    "comidacao",
+    "comidagato",
+    "comidacoelho",
+    "comidahamster"
+];
+function onDrop(event, timer) {
+    event.preventDefault();
+    var foodURL = event.dataTransfer.getData("text");
+    var foodPNG = foodURL.split("/")[6];
+    var food = foodPNG.split(".")[0];
+    console.log(food);
+
+    if(!comidas.includes(food))
+        return; // Se nao for uma comida, nao faz nada
+    
+
+    clearInterval(timer);
+
+    // Adiciona dinheiro
+    const money = document.getElementById('dinheiroTotal');
+    money.textContent = parseInt(money.textContent) + 10;
 
 
+    //Find the div where this target is in
+    let divParent = event.target.parentElement;
+
+    let id = divParent.id;
+
+    // split on _
+    let lugar = parseInt(id.split('_')[1]);
+
+    // Remover o cliente da lista e do ecra
+    let div = document.getElementById('clientes');
+    div.removeChild(divParent);
+    clientesInGame[lugar] = null;
+}
 

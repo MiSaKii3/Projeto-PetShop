@@ -87,5 +87,3 @@ document.onkeydown = function(event) {
             player.style.top = player_y + 10 + "px";
     }
 }
-
-
