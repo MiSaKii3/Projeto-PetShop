@@ -194,7 +194,8 @@ var comidas = [
 function onDrop(event, timer) {
     event.preventDefault();
     var foodURL = event.dataTransfer.getData("text");
-    var foodPNG = foodURL.split("/")[6];
+    var foodArgs = foodURL.split("/");
+    var foodPNG = foodArgs[foodArgs.length - 1];
     var food = foodPNG.split(".")[0];
     console.log(food);
 
