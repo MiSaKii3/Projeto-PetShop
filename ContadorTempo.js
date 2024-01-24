@@ -8,8 +8,10 @@
 
 // Função para atualizar o contador de tempo
 function atualizarContador() {
+    //save
+    //...
     segundos++;
-    document.getElementById('contador').innerText = formatarTempo(segundos);
+    document.getElementById('contador').textContent = formatarTempo(segundos);
 }
 let segundos = 0;
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo

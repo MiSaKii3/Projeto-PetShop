@@ -11,8 +11,9 @@ function Login() {
 
     //Para os dados das caixas de texto coincidirem com os dados do dicionário
     if (dados[user.value] === pass.value) {
-
         window.location.href = "jogo.html";
+        // Load das coisas
+        // localStorage para load das moedas, tempo, ...
         return true;
     }
 

@@ -101,7 +101,7 @@ function generate(){
 
         // Adiciona dinheiro
         const money = document.getElementById('dinheiroTotal');
-        money.innerText = parseInt(money.innerText) + 10;
+        money.textContent = parseInt(money.textContent) + 10;
     }
 }
 
