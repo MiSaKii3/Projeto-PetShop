@@ -161,7 +161,7 @@ function createBalaoDeFala() {
 
 function CriarTemp() {
     const temporizador = document.createElement('div');
-    temporizador.textContent = '20';
+    temporizador.textContent = '16';
     temporizador.id = 'temporizador';
     temporizador.style.zIndex = '6';
     temporizador.style.fontWeight = 'bold';
@@ -179,11 +179,7 @@ function procuraLugarParaCliente() {
     return -1;
 }
 
-function temporizadorDecrease(clienteDiv) {
-
-}
-
-setInterval(generate, 1500); // Cria um cliente a cada 1 segundos
+setInterval(generate, 1000); // Cria um cliente a cada 1 segundos
 
 // Funcoes para os clientes quando lhes dropam comida
 
