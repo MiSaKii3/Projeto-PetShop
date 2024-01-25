@@ -8,11 +8,11 @@ function formatarTempo(segundos) {
 
 // Função para exibir a tela de game over
 function exibirGameOver() {
-    document.getElementById('game-over-tela').classList.remove('hidden');
+    let janelalose = document.getElementById('game-over-tela').classList.remove('hidden');
 }
 // Função para exibir a tela de win
 function exibirYouWin() {
-    document.getElementById('win-tela').classList.remove('hidden2');
+    let janelawin = document.getElementById('win-tela').classList.remove('hidden2');
 }
 
 // Função para atualizar o contador de tempo
@@ -27,18 +27,21 @@ function atualizarContador() {
         document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
         localStorage.setItem("tempo", document.getElementById('contador').textContent);
 
-        if (dinheiroTotal.textContent < 0) {
-            exibirGameOver("Game Over");
-            clearInterval(intervalo);
+        //se dinheiro igual a entre 0 e 50, perdemos o jogo mas apos o contador acabar
+        if (segundos == 360) {
+            if (dinheiroTotal.textContent >= 0 && dinheiroTotal.textContent <= 300) {
+                exibirGameOver();
+                clearInterval(intervalo);
 
-        } else if (dinheiroTotal.textContent > 0) {
-            //exibirYouWin("You Win");
-            //clearInterval(intervalo);
+            } else if (dinheiroTotal.textContent > 300) {
+                exibirYouWin();
+                clearInterval(intervalo);
+            }
         }
     }
 
 }
 
 let segundos = 0;
-const totalSegundos = 360000; // 6 minutos
+const totalSegundos = 360; // 6 minutos
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo

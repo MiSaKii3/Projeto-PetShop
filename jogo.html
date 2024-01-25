@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <button id="coolButton" onclick="Home();"><i class='bx bxs-home' ></i></button>
+    <button id="coolButton" onclick="Home();"><i class='bx bxs-home'></i></button>
     <div class="game-container" ondragover="allowDrop(event)">
 
         <!-- Contador de tempo -->
@@ -31,7 +31,7 @@
 
         <img src="Images/Main_Character.png" alt="Personagem principal" id="Main_Character">
 
-        <div class= "zonaanimais">
+        <div class="zonaanimais">
             <img src="Images/Zona animais/zonacaes.png" id="zonacaes">
             <img class="arrastaveis" src="Images/acessorios/animais/caes/cao3.png" alt="Cão" id="cao3">
             <img class="arrastaveis" src="Images/acessorios/animais/caes/cao1.png" alt="Cão" id="cao1">
@@ -41,7 +41,7 @@
             <img class="tacas" src="Images/acessorios/acessorioscaes/tacacaocheia.png" id="tacacao">
         </div>
 
-        <div class= "zonaanimais">
+        <div class="zonaanimais">
             <img src="Images/Zona animais/zonagatos.png" id="zonagatos">
             <img class="arrastaveis" src="Images/acessorios/animais/gatos/gato1.png" alt="Gato" id="gato1">
             <img class="arrastaveis" src="Images/acessorios/animais/gatos/gato2.png" alt="Gato" id="gato2">
@@ -52,7 +52,7 @@
             <img class="tacas" src="Images/acessorios/acessoriosgatos/tacagatocheia.png" id="tacagato">
         </div>
 
-        <div class= "zonaanimais">
+        <div class="zonaanimais">
             <img src="Images/Zona animais/zonacoelhos.png" id="zonacoelhos">
             <img class="arrastaveis" src="Images/acessorios/animais/coelhos/coelho3.png" alt="Coelho" id="coelho3">
             <img class="arrastaveis" src="Images/acessorios/animais/coelhos/coelho2.png" alt="Coelho" id="coelho2">
@@ -61,14 +61,14 @@
             <img class="tacas" src="Images/acessorios/acessorioscoelhos/tacacoelhocheia.png" id="tacacoelho">
         </div>
 
-        <div class= "zonaanimais" >
+        <div class="zonaanimais">
             <img src="Images/Zona animais/zonahasmters.png" id="zonahamsters">
             <img class="arrastaveis" src="Images/acessorios/animais/hamster/hamster1.png" alt="Hamster" id="hamster1">
             <img class="arrastaveis" src="Images/acessorios/animais/hamster/hamster2.png" alt="Hamster" id="hamster2">
             <img class="arrastaveis" src="Images/acessorios/animais/hamster/hamster3.png" alt="Hamster" id="hamster3">
             <img class="arrastaveis" src="Images/acessorios/animais/hamster/hamster4.png" alt="Hamster" id="hamster4">
             <img class="arrastaveis" src="Images/acessorios/animais/hamster/hamster5.png" alt="Hamster" id="hamster5">
-            <img class="tacas" src="Images/acessorios/acessorioshamsters/tacahamstercheia.png"  id="tacahamster">
+            <img class="tacas" src="Images/acessorios/acessorioshamsters/tacahamstercheia.png" id="tacahamster">
         </div>
 
         <img src="Images/Tapete_entrada.png" alt="Tapete_entrada" id="Tapete_entrada">
@@ -82,31 +82,28 @@
             <img class="arrastaveis" src="Images/acessorios/acessorioshamsters/comidahamster.png" id="comidahamster">
         </div>
 
-        <div id = "clientes">
+        <div id="clientes">
 
-        <div id="game-over-tela" class="hidden">
-          <h2>Game Over</h2>
-          <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
-          <p>Clientes atendidos: <span id="clientes-servidos">0</span></p> 
+            <div id="game-over-tela" class="hidden">
+                <h2>Game Over</h2>
+                <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
+                <p>Clientes atendidos: <span id="clientes-servidos">0</span></p>
+            </div>
+
+            <div id="win-tela" class="hidden2">
+                <h2>Congratulations! You win!</h2>
+                <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
+                <p>Clientes atendidos: <span id="clientes-servidos">0</span></p>
+            </div>
         </div>
 
-        <div id="win-tela" class="hidden2">
-            <h2>Congratulations! You win!</h2>
-            <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
-            <p>Clientes atendidos: <span id="clientes-servidos">0</span></p> 
-          </div>
-
-        <!--Caixas de texto que vão conter a história inicial -->
-        <div id="zona"></div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="ContadorTempo.js"></script>
-    <script src="Alimentar.js"></script>
-    <script src="Logar.js"></script>
-    <script src="GeradorClientes.js"></script>
-    <script src="Arrastar.js"></script>
-    <script src="AberturaLoja.js"></script>
+        <!-- Scripts -->
+        <script src="ContadorTempo.js"></script>
+        <script src="Alimentar.js"></script>
+        <script src="Logar.js"></script>
+        <script src="GeradorClientes.js"></script>
+        <script src="Arrastar.js"></script>
+        <script src="AberturaLoja.js"></script>
 
 </body>
 
