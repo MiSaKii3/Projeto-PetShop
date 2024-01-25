@@ -161,7 +161,7 @@ function createBalaoDeFala() {
 
 function CriarTemp() {
     const temporizador = document.createElement('div');
-    temporizador.textContent = '16';
+    temporizador.textContent = '15';
     temporizador.id = 'temporizador';
     temporizador.style.zIndex = '6';
     temporizador.style.fontWeight = 'bold';

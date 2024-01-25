@@ -24,11 +24,12 @@ function Login() {
         alert("Preencha os campos");
         return false;
     }
-
+    //Se não coincidirem, manda uma mensagem
     alert("Username ou Password incorretas");
     return false;
 }
 
+//Voltar à página de login (ou homepage)
 function Home(){
     window.location.href = "index.html";
 }
