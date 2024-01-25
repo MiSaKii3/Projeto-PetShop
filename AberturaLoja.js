@@ -14,6 +14,6 @@ function abrirLoja() {
     contador++;
 
     // Atualizar o conteúdo do contador
-    document.getElementById('contador').innerText = contador;
+    document.getElementById('contador').textContent = contador;
 
 }

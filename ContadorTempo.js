@@ -1,5 +1,5 @@
- // Função para formatar o tempo
- function formatarTempo(segundos) {
+// Função para formatar o tempo
+function formatarTempo(segundos) {
     const horas = Math.floor(segundos / 3600);
     const minutos = Math.floor((segundos % 3600) / 60);
     const segundosFormatados = segundos % 60;
@@ -10,8 +10,12 @@
 function atualizarContador() {
     //save
     //...
-    segundos++;
-    document.getElementById('contador').textContent = formatarTempo(segundos);
+    const totalmilisegudos = 600000;
+
+    if (segundos < totalmilisegudos) {
+        segundos++;
+        document.getElementById('contador').textContent = formatarTempo(segundos);
+    }
 }
 let segundos = 0;
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo

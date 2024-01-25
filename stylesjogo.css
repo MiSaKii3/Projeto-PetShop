@@ -450,19 +450,6 @@ body {
 
 /* Disposição da pequena história que vai aparecer no início do jogo */
 
-
-  .frases{
-    display: none;
-    padding: 20px;
-    background-color: #6b5f4c;
-    color: #fff;
-    border-radius: 6px;
-    position: absolute;
-    top: 190px;
-    left: 290px;
-    cursor: pointer;
-    cursor: pointer;
-}
 #game-over-tela{
   text-align: center;
   background-color: #fff;
