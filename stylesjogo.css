@@ -451,11 +451,28 @@ body {
 /* Disposição da pequena história que vai aparecer no início do jogo */
 
 #game-over-tela{
+  position: absolute;
   text-align: center;
   background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-left: 300px;
- /* A MELHORAR */
+  padding: 150px;
+  border-radius: 8px;
+  margin-left: 540px;
+  margin-top: 350px;
+  z-index: 7;
+}
+.hidden{
+    display: none;
+}
+#win-tela{
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    padding: 150px;
+    border-radius: 8px;
+    margin-left: 540px;
+    margin-top: 350px;
+    z-index: 7; 
+}
+.hidden2{
+    display: none;
 }
