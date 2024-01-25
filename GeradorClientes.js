@@ -108,12 +108,15 @@ function generate() {
             const money = document.getElementById('dinheiroTotal');
             var dinheiroAtual = parseInt(money.textContent);
 
+            money.textContent = dinheiroAtual - 5;
+
             //Para o dinheiro não ser negativo
-            if (dinheiroAtual >= 10) {
-                money.textContent = dinheiroAtual - 10;
+            if (money.textContent < 0) {
+                money.textContent = 0;
             }
 
             clearInterval(timer);
+
         } else {
             temporizador.textContent = parseInt(temporizador.textContent) - 1;
         }
@@ -192,6 +195,26 @@ var comidas = [
     "comidagato",
     "comidacoelho",
     "comidahamster",
+    "cao1",
+    "cao2",
+    "cao3",
+    "cao4",
+    "cao5",
+    "gato1",
+    "gato2",
+    "gato3",
+    "gato4",
+    "gato5",
+    "gato6",
+    "coelho1",
+    "coelho2",
+    "coelho3",
+    "coelho4",
+    "hamster1",
+    "hamster2",
+    "hamster3",
+    "hamster4",
+    "hamster5"
 ];
 
 function onDrop(event, timer) {

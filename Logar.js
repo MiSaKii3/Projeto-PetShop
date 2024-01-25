@@ -12,8 +12,18 @@ function Login() {
     //Para os dados das caixas de texto coincidirem com os dados do dicionário
     if (dados[user.value] === pass.value) {
         window.location.href = "jogo.html";
+
         // Load das coisas
         // localStorage para load das moedas, tempo, ...
+
+        let moedas = document.getElementById("dinheiroTotal");
+        let guardarmoedas = localStorage.getItem("moedas");
+        moedas.textContent = guardarmoedas;
+
+        let tempo = document.getElementById("contador");
+        let guardartempo = localStorage.getItem("tempo");
+        tempo.textContent = guardartempo;
+
         return true;
     }
 

@@ -17,19 +17,28 @@ function exibirYouWin() {
 
 // Função para atualizar o contador de tempo
 function atualizarContador() {
-    const totalSegundos = 360; // 6 minutos
-    dinheiroTotal = document.getElementById('dinheiroTotal')
 
-    if (segundos >= totalSegundos) {
-        if (dinheiroTotal < 0) {
+    let dinheiroTotal = document.getElementById('dinheiroTotal');
+    localStorage.setItem("moedas", dinheiroTotal.textContent);
+
+    if (segundos < totalSegundos) {
+
+        segundos++;
+        document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
+        localStorage.setItem("tempo", document.getElementById('contador').textContent);
+
+        if (dinheiroTotal.textContent < 0) {
             exibirGameOver("Game Over");
-        } else if (dinheiroTotal > 0) {
-            exibirYouWin("You Win");
+            clearInterval(intervalo);
+
+        } else if (dinheiroTotal.textContent > 0) {
+            //exibirYouWin("You Win");
+            //clearInterval(intervalo);
         }
-        clearInterval(intervalo);
     }
-    
+
 }
 
 let segundos = 0;
+const totalSegundos = 360000; // 6 minutos
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
