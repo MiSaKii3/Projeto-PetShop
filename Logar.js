@@ -68,3 +68,6 @@ function atualizarDados() {
         alert("Username ou Password incorretas");
     }
 }
+function VoltarFormulario() {
+    window.location.href = "formulario.html";
+}
