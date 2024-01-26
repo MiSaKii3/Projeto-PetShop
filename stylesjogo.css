@@ -485,6 +485,7 @@ body {
     margin-left: 540px;
     margin-top: 350px;
     z-index: 7;
+    font-size: 20px;
 }
 
 .hidden {
@@ -500,6 +501,7 @@ body {
     margin-left: 540px;
     margin-top: 350px;
     z-index: 7;
+    font-size: 20px;
 }
 
 .hidden2 {
@@ -554,7 +556,6 @@ body {
 #frase {
     margin: 0;
     font-weight: bold;
-    top: 860px;
 }
 
 #botaorepetirfora{
@@ -575,4 +576,11 @@ body {
 
 #botaorepetirfora:hover {
     background-color: #ffa166;
+}
+
+#buttonreset
+{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
 }
