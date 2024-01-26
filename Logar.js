@@ -1,4 +1,3 @@
-
 let dados = {
 
     "angelsofy23": "Morganaisthebestchamp",

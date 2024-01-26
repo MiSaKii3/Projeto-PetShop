@@ -64,7 +64,12 @@ document.getElementById('contador').textContent = formatarTempo(segundos);
 if(localStorage.getItem("moedas") != 0){
     console.log("moedas não é 0");
     let moedas = document.getElementById("dinheiroTotal");
-    moedas.textContent = localStorage.getItem("moedas");
+    if(localStorage.getItem("moedas") != null)
+    {
+         moedas.textContent = localStorage.getItem("moedas");
+    } else{
+        moedas.textContent = 0;
+    }
 }
 
 const totalSegundos = 360; // 6 minutos
