@@ -4,65 +4,67 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url('Images/fundo.png'); /* Colocar a imagem do menu como fundo */
+    background-image: url('Images/fundo.png');
+    /* Colocar a imagem do menu como fundo */
     background: fixed;
 }
 
 .game-container {
     position: absolute;
-    width: 1500px; 
-    max-width: 1800px; 
+    width: 1500px;
+    max-width: 1800px;
     height: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto 0;
     outline: 6px solid #fff;
-    overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
+    overflow: hidden;
+    /* Ter a certeza de que o container não estica verticalmente */
     background-color: bisque;
 }
 
-.game-container #Image_room
-{
+.game-container #Image_room {
     position: absolute;
     height: 1116px
 }
 
 .game-container img {
     width: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
 
 #Main_Character {
     position: absolute;
     top: 500px;
-    left: 930px; /* 800px - 70px */
+    left: 930px;
+    /* 800px - 70px */
     transform: translate(-50%, -50%);
     width: 66px;
     z-index: 4;
 }
 
-#zonacaes{
+#zonacaes {
     position: absolute;
     width: 130px;
     left: 330px;
     top: 470px;
 }
 
-#zonagatos{
+#zonagatos {
     position: absolute;
     left: 540px;
     top: 490px;
     width: 130px;
 }
 
-#zonacoelhos{
+#zonacoelhos {
     position: absolute;
     width: 130px;
     left: 320px;
     top: 720px;
 }
 
-#zonahamsters{
+#zonahamsters {
     position: absolute;
     width: 130px;
     left: 500px;
@@ -84,7 +86,7 @@ body {
 #cao2 {
     position: absolute;
     top: 500px;
-    left: 430px; 
+    left: 430px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -93,7 +95,7 @@ body {
 #cao3 {
     position: absolute;
     top: 550px;
-    left: 370px; 
+    left: 370px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -113,7 +115,7 @@ body {
 #cao5 {
     position: absolute;
     top: 510px;
-    left: 390px; 
+    left: 390px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -124,7 +126,7 @@ body {
 #coelho1 {
     position: absolute;
     top: 748px;
-    left: 355px; 
+    left: 355px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
@@ -140,7 +142,7 @@ body {
 #coelho3 {
     position: absolute;
     top: 790px;
-    left: 370px; 
+    left: 370px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
@@ -148,7 +150,7 @@ body {
 #coelho4 {
     position: absolute;
     top: 780px;
-    left: 410px; 
+    left: 410px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
@@ -158,7 +160,7 @@ body {
 #gato1 {
     position: absolute;
     top: 520px;
-    left: 575px; 
+    left: 575px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 1;
@@ -167,7 +169,7 @@ body {
 #gato2 {
     position: absolute;
     top: 520px;
-    left: 640px; 
+    left: 640px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 1;
@@ -194,7 +196,7 @@ body {
 #gato5 {
     position: absolute;
     top: 540px;
-    left: 610px; 
+    left: 610px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 1;
@@ -202,8 +204,8 @@ body {
 
 #gato6 {
     position: absolute;
-    top:590px;
-    left: 580px; 
+    top: 590px;
+    left: 580px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 2;
@@ -214,7 +216,7 @@ body {
 #hamster1 {
     position: absolute;
     top: 750px;
-    left: 530px; 
+    left: 530px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
@@ -222,7 +224,7 @@ body {
 #hamster2 {
     position: absolute;
     top: 750px;
-    left: 600px; 
+    left: 600px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
@@ -238,7 +240,7 @@ body {
 #hamster4 {
     position: absolute;
     top: 800px;
-    left: 530px; 
+    left: 530px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
@@ -246,7 +248,7 @@ body {
 #hamster5 {
     position: absolute;
     top: 766px;
-    left: 565px; 
+    left: 565px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
@@ -256,23 +258,23 @@ body {
 #tacacao {
     position: absolute;
     top: 580px;
-    left: 420px; 
+    left: 420px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
 
-#tacahamster{
+#tacahamster {
     position: absolute;
     top: 830px;
-    left: 565px; 
+    left: 565px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
 
 #tacagato {
     position: absolute;
-    top:600px;
-    left: 630px; 
+    top: 600px;
+    left: 630px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
@@ -280,13 +282,13 @@ body {
 #tacacoelho {
     position: absolute;
     top: 810px;
-    left: 390px; 
+    left: 390px;
     width: 45px;
 }
 
 /* --------------------------------------- */
 
-#comidacao{
+#comidacao {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -295,7 +297,7 @@ body {
     z-index: 2;
 }
 
-#comidagato{
+#comidagato {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 53px;
@@ -304,7 +306,7 @@ body {
     z-index: 2;
 }
 
-#comidacoelho{
+#comidacoelho {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -312,7 +314,7 @@ body {
     top: 380px;
 }
 
-#comidahamster{
+#comidahamster {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -326,7 +328,7 @@ body {
 #Tapete_entrada {
     position: absolute;
     top: 900px;
-    left: 703px; 
+    left: 703px;
     transform: translate(-50%, -50%);
     width: 80px;
 }
@@ -334,14 +336,14 @@ body {
 #Caixa_Registadora {
     position: absolute;
     top: 550px;
-    left: 940px; 
+    left: 940px;
     transform: translate(-50%, -50%);
     width: 120px;
     z-index: 4;
 }
 
 /* Disposição da barra de moedas */
-#Image_coins_bar{
+#Image_coins_bar {
     position: absolute;
     top: 130px;
     left: 166px;
@@ -350,8 +352,9 @@ body {
     z-index: 1;
 
 }
+
 /* Disposição da barra de tempo */
-#Image_time_bar{
+#Image_time_bar {
     position: absolute;
     top: 230px;
     left: 166px;
@@ -384,7 +387,7 @@ body {
 }
 
 /* Disposição do ícone das moedas */
-#Image_coins{
+#Image_coins {
     position: absolute;
     top: 123px;
     left: 43px;
@@ -392,7 +395,7 @@ body {
     width: 50px;
 }
 
-#Image_time{
+#Image_time {
     position: absolute;
     top: 225px;
     left: 43px;
@@ -402,7 +405,7 @@ body {
 
 #coolButton {
     position: absolute;
-    top:33px;
+    top: 33px;
     left: 33px;
     padding: 10px 20px;
     background-color: transparent;
@@ -450,20 +453,7 @@ body {
 
 /* Disposição da pequena história que vai aparecer no início do jogo */
 
-#game-over-tela{
-  position: absolute;
-  text-align: center;
-  background-color: #fff;
-  padding: 150px;
-  border-radius: 8px;
-  margin-left: 540px;
-  margin-top: 350px;
-  z-index: 7;
-}
-.hidden{
-    display: none;
-}
-#win-tela{
+#game-over-tela {
     position: absolute;
     text-align: center;
     background-color: #fff;
@@ -471,29 +461,45 @@ body {
     border-radius: 8px;
     margin-left: 540px;
     margin-top: 350px;
-    z-index: 7; 
+    z-index: 7;
 }
-.hidden2{
+
+.hidden {
     display: none;
 }
 
-#temporizadorcaes{
+#win-tela {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    padding: 150px;
+    border-radius: 8px;
+    margin-left: 540px;
+    margin-top: 350px;
+    z-index: 7;
+}
+
+.hidden2 {
+    display: none;
+}
+
+#temporizadorcaes {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
     left: 380px;
-    top:610px;
+    top: 610px;
 }
 
-#temporizadorgatos{
+#temporizadorgatos {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
     left: 590px;
-    top:630px;
+    top: 630px;
 }
 
-#temporizadorcoelhos{
+#temporizadorcoelhos {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
@@ -501,10 +507,18 @@ body {
     top: 860px;
 }
 
-#temporizadorhamsters{
+#temporizadorhamsters {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
     left: 560px;
-    top:860px;
+    top: 860px;
+}
+
+#botaorepetirfora {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 33px;
+    left: 33px;
 }
