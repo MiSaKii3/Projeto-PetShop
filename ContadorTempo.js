@@ -38,13 +38,13 @@ function atualizarContador() {
     if (segundos >= totalSegundos) {
         
         if (dinheiroTotal.textContent <= 300) {
-            let ganhos = document.getElementById("ganhos-dia-lose");
+            let ganhos = document.getElementById("ganhos-dia");
             ganhos.textContent = dinheiroTotal.textContent;
             exibirGameOver();
             clearInterval(intervalo);
 
         } else if (dinheiroTotal.textContent > 300) {
-            let ganhos = document.getElementById("ganhos-dia-win");
+            let ganhos = document.getElementById("ganhos-dia");
             ganhos.textContent = dinheiroTotal.textContent;
             exibirYouWin();
             clearInterval(intervalo);
@@ -67,6 +67,7 @@ if(localStorage.getItem("moedas") != 0){
     let moedas = document.getElementById("dinheiroTotal");
     moedas.textContent = localStorage.getItem("moedas");
 }
+
 const totalSegundos = 360; // 6 minutos
 let intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
 

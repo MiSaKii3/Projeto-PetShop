@@ -4,79 +4,67 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-image: url('Images/fundo.png'); /* Colocar a imagem do menu como fundo */
+    background-image: url('Images/fundo.png');
+    /* Colocar a imagem do menu como fundo */
     background: fixed;
 }
 
-/* Disposição do conteúdo do jogo */
-
 .game-container {
     position: absolute;
-    width: 1500px; 
-    max-width: 1800px; 
+    width: 1500px;
+    max-width: 1800px;
     height: 1000px;
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto 0;
     outline: 6px solid #fff;
-    overflow: hidden; /* Ter a certeza de que o container não estica verticalmente */
+    overflow: hidden;
+    /* Ter a certeza de que o container não estica verticalmente */
     background-color: bisque;
 }
 
-/* Disposição da imagem da loja */
-
-.game-container #Image_room
-{
+.game-container #Image_room {
     position: absolute;
     height: 1116px
 }
 
 .game-container img {
     width: 100%;
-    object-fit:contain;
+    object-fit: contain;
 }
-
-/* Disposição da personagem principal do jogo */
 
 #Main_Character {
     position: absolute;
     top: 500px;
-    left: 930px; 
+    left: 930px;
+    /* 800px - 70px */
     transform: translate(-50%, -50%);
     width: 66px;
     z-index: 4;
 }
 
-/* Disposição da zona onde estão os cães */
-
-#zonacaes{
+#zonacaes {
     position: absolute;
     width: 130px;
     left: 330px;
     top: 470px;
 }
 
-/* Disposição da zona onde estão os gatos */
-
-#zonagatos{
+#zonagatos {
     position: absolute;
     left: 540px;
     top: 490px;
     width: 130px;
 }
 
-/* Disposição da zona onde estão os coelhos */
-
-#zonacoelhos{
+#zonacoelhos {
     position: absolute;
     width: 130px;
     left: 320px;
     top: 720px;
 }
 
-/* Disposição da zona onde estão os hamsters */
-
-#zonahamsters{
+#zonahamsters {
     position: absolute;
     width: 130px;
     left: 500px;
@@ -84,8 +72,6 @@ body {
 }
 
 /* --------------------------------------- */
-
-/* Disposição da imagem referente ao cão1 */
 
 #cao1 {
     position: absolute;
@@ -96,29 +82,25 @@ body {
     height: 50px;
 }
 
-/* Disposição da imagem referente ao cão2 */
 
 #cao2 {
     position: absolute;
     top: 500px;
-    left: 430px; 
+    left: 430px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
 }
-
-/* Disposição da imagem referente ao cão3 */
 
 #cao3 {
     position: absolute;
     top: 550px;
-    left: 370px; 
+    left: 370px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
 }
 
-/* Disposição da imagem referente ao cão4 */
 
 #cao4 {
     position: absolute;
@@ -129,12 +111,11 @@ body {
     height: 50px;
 }
 
-/* Disposição da imagem referente ao cão5 */
 
 #cao5 {
     position: absolute;
     top: 510px;
-    left: 390px; 
+    left: 390px;
     transform: translate(-50%, -50%);
     width: 50px;
     height: 50px;
@@ -142,17 +123,13 @@ body {
 
 /* --------------------------------------- */
 
-/* Disposição da imagem referente ao coelho1 */
-
 #coelho1 {
     position: absolute;
     top: 748px;
-    left: 355px; 
+    left: 355px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
-
-/* Disposição da imagem referente ao coelho2 */
 
 #coelho2 {
     position: absolute;
@@ -162,51 +139,41 @@ body {
     width: 45px;
 }
 
-/* Disposição da imagem referente ao coelho3 */
-
 #coelho3 {
     position: absolute;
     top: 790px;
-    left: 370px; 
+    left: 370px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
 
-/* Disposição da imagem referente ao coelho4 */
-
 #coelho4 {
     position: absolute;
     top: 780px;
-    left: 410px; 
+    left: 410px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
 
 /* ---------------------------------------- */
 
-/* Disposição da imagem referente ao gato1 */
-
 #gato1 {
     position: absolute;
     top: 520px;
-    left: 575px; 
+    left: 575px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 1;
 }
-
-/* Disposição da imagem referente ao gato2 */
 
 #gato2 {
     position: absolute;
     top: 520px;
-    left: 640px; 
+    left: 640px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 1;
 }
-
-/* Disposição da imagem referente ao gato3 */
 
 #gato3 {
     position: absolute;
@@ -217,8 +184,6 @@ body {
     z-index: 2;
 }
 
-/* Disposição da imagem referente ao gato4 */
-
 #gato4 {
     position: absolute;
     top: 560px;
@@ -228,23 +193,19 @@ body {
     z-index: 2;
 }
 
-/* Disposição da imagem referente ao gato5 */
-
 #gato5 {
     position: absolute;
     top: 540px;
-    left: 610px; 
+    left: 610px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 1;
 }
 
-/* Disposição da imagem referente ao gato6 */
-
 #gato6 {
     position: absolute;
-    top:590px;
-    left: 580px; 
+    top: 590px;
+    left: 580px;
     transform: translate(-50%, -50%);
     width: 50px;
     z-index: 2;
@@ -252,27 +213,21 @@ body {
 
 /* ---------------------------------------- */
 
-/* Disposição da imagem referente ao hamster1 */
-
 #hamster1 {
     position: absolute;
     top: 750px;
-    left: 530px; 
+    left: 530px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
-
-/* Disposição da imagem referente ao hamster2 */
 
 #hamster2 {
     position: absolute;
     top: 750px;
-    left: 600px; 
+    left: 600px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
-
-/* Disposição da imagem referente ao hamster3 */
 
 #hamster3 {
     position: absolute;
@@ -282,71 +237,58 @@ body {
     width: 35px;
 }
 
-/* Disposição da imagem referente ao hamster4 */
-
 #hamster4 {
     position: absolute;
     top: 800px;
-    left: 530px; 
+    left: 530px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
 
-/* Disposição da imagem referente ao hamster5 */
-
 #hamster5 {
     position: absolute;
     top: 766px;
-    left: 565px; 
+    left: 565px;
     transform: translate(-50%, -50%);
     width: 35px;
 }
 
 /* ------------------------------------------ */
 
-/* Disposição da taça dos cães */
-
 #tacacao {
     position: absolute;
     top: 580px;
-    left: 420px; 
+    left: 420px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
 
-/* Disposição da taça dos hamsters */
-
-#tacahamster{
+#tacahamster {
     position: absolute;
     top: 830px;
-    left: 565px; 
+    left: 565px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
-
-/* Disposição da taça dos gatos */
 
 #tacagato {
     position: absolute;
-    top:600px;
-    left: 630px; 
+    top: 600px;
+    left: 630px;
     transform: translate(-50%, -50%);
     width: 45px;
 }
-
-/* Disposição da taça dos coelhos */
 
 #tacacoelho {
     position: absolute;
     top: 810px;
-    left: 390px; 
+    left: 390px;
     width: 45px;
 }
 
 /* --------------------------------------- */
 
-/* Disposição da ração para cães */
-#comidacao{
+#comidacao {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -355,8 +297,7 @@ body {
     z-index: 2;
 }
 
-/* Disposição da ração para gatos */
-#comidagato{
+#comidagato {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 53px;
@@ -365,9 +306,7 @@ body {
     z-index: 2;
 }
 
-/* Disposição da ração para coelhos */
-
-#comidacoelho{
+#comidacoelho {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -375,9 +314,7 @@ body {
     top: 380px;
 }
 
-/* Disposição da ração para hamsters */
-
-#comidahamster{
+#comidahamster {
     position: absolute;
     transform: translate(-50%, -50%);
     width: 50px;
@@ -388,30 +325,25 @@ body {
 
 /* --------------------------------------- */
 
-/* Disposição do tapete de entrada */
-
 #Tapete_entrada {
     position: absolute;
     top: 900px;
-    left: 703px; 
+    left: 703px;
     transform: translate(-50%, -50%);
     width: 80px;
 }
 
-/* Disposição da caixa registadora*/
-
 #Caixa_Registadora {
     position: absolute;
     top: 550px;
-    left: 940px; 
+    left: 940px;
     transform: translate(-50%, -50%);
     width: 120px;
     z-index: 4;
 }
 
 /* Disposição da barra de moedas */
-
-#Image_coins_bar{
+#Image_coins_bar {
     position: absolute;
     top: 130px;
     left: 166px;
@@ -420,9 +352,9 @@ body {
     z-index: 1;
 
 }
-/* Disposição da barra de tempo */
 
-#Image_time_bar{
+/* Disposição da barra de tempo */
+#Image_time_bar {
     position: absolute;
     top: 230px;
     left: 166px;
@@ -432,7 +364,6 @@ body {
 }
 
 /* Disposição do contador de tempo */
-
 #contador {
     z-index: 2;
     position: absolute;
@@ -444,7 +375,6 @@ body {
 }
 
 /* Disposição do dinheiro */
-
 #dinheiroTotal {
     z-index: 2;
     position: absolute;
@@ -457,8 +387,7 @@ body {
 }
 
 /* Disposição do ícone das moedas */
-
-#Image_coins{
+#Image_coins {
     position: absolute;
     top: 123px;
     left: 43px;
@@ -466,9 +395,7 @@ body {
     width: 50px;
 }
 
-/* Disposição do ícone do tempo */
-
-#Image_time{
+#Image_time {
     position: absolute;
     top: 225px;
     left: 43px;
@@ -476,11 +403,9 @@ body {
     width: 40px;
 }
 
-/* Disposição do botão que redireciona para a página inicial*/
-
 #coolButton {
     position: absolute;
-    top:33px;
+    top: 33px;
     left: 33px;
     padding: 10px 20px;
     background-color: transparent;
@@ -528,16 +453,12 @@ body {
     width: 75px;
 }
 
-/* Disposição do temporizador*/
-
 #temporizador {
     position: absolute;
     top: 930px;
     transform: translate(-50%, -50%);
     width: 75px;
 }
-
-/* Disposição dos pedidos dos clientes */
 
 #pedido {
     position: absolute;
@@ -546,8 +467,6 @@ body {
     width: 30px;
 }
 
-/* Disposição dos balões que contêm os pedidos dos clientes */
-
 #balao {
     position: absolute;
     top: 830px;
@@ -555,28 +474,9 @@ body {
     width: 100px;
 }
 
-/* Disposição da tela game over */
+/* Disposição da pequena história que vai aparecer no início do jogo */
 
-#game-over-tela{
-  position: absolute;
-  text-align: center;
-  background-color: #fff;
-  padding: 150px;
-  border-radius: 8px;
-  margin-left: 540px;
-  margin-top: 350px;
-  z-index: 7;
-}
-
-/* Esconder a tela de derrota */
-
-.hidden{
-    display: none;
-}
-
-/* Disposição da tela de vitória */
-
-#win-tela{
+#game-over-tela {
     position: absolute;
     text-align: center;
     background-color: #fff;
@@ -584,38 +484,45 @@ body {
     border-radius: 8px;
     margin-left: 540px;
     margin-top: 350px;
-    z-index: 7; 
+    z-index: 7;
 }
 
-/* Esconder a tela de vitória */
-
-.hidden2{
+.hidden {
     display: none;
 }
 
-/* Disposição do temporizador que vai aparecer no tapete dos cães */
+#win-tela {
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    padding: 150px;
+    border-radius: 8px;
+    margin-left: 540px;
+    margin-top: 350px;
+    z-index: 7;
+}
 
-#temporizadorcaes{
+.hidden2 {
+    display: none;
+}
+
+#temporizadorcaes {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
     left: 380px;
-    top:610px;
+    top: 610px;
 }
 
-/* Disposição do temporizador que vai aparecer no tapete dos gatos */
-
-#temporizadorgatos{
+#temporizadorgatos {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
     left: 590px;
-    top:630px;
+    top: 630px;
 }
 
-/* Disposição do temporizador que vai aparecer no tapete dos coelhos*/
-
-#temporizadorcoelhos{
+#temporizadorcoelhos {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
@@ -623,12 +530,49 @@ body {
     top: 860px;
 }
 
-/* Disposição do temporizador que vai aparecer no tapete dos hamsters */
-
-#temporizadorhamsters{
+#temporizadorhamsters {
     font-weight: bold;
     font-size: 16px;
     position: absolute;
     left: 560px;
     top:860px;
+}
+
+#frase-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 50px;
+    background-color: rgb(152, 98, 31);
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 300px;
+    z-index: 8;
+}
+
+#frase {
+    margin: 0;
+    font-weight: bold;
+    top: 860px;
+}
+
+#botaorepetirfora{
+    position: absolute;
+    top: 850px;
+    left: 150px;
+    padding: 15px 15px;
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 66px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+}
+
+#botaorepetirfora:hover {
+    background-color: #ffa166;
 }

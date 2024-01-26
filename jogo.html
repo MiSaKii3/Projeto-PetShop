@@ -95,14 +95,22 @@
                 <h2>Game Over</h2>
                 <br></br>
                 <p>Ganhos do dia: <span id="ganhos-dia-lose">0</span></p>
+                <button id="buttonreset" onclick="reiniciarJogo();"></i>Repetir?</button>
             </div>
-            
+
             <!-- Tela de vitória -->
             <div id="win-tela" class="hidden2">
-                <h2>Parabéns! Ganhaste</h2>
+                <h2>Parabéns! Ganhaste!</h2>
                 <br></br>
                 <p>Ganhos do dia: <span id="ganhos-dia-win">0</span></p>
+                <button id="buttonreset" onclick="reiniciarJogo();"></i>Repetir?</button>
             </div>
+
+            <button id="botaorepetirfora" onclick="reiniciarJogo();"><i class='bx bx-repeat'></i></button>
+        </div>
+
+        <div id="frase-container" onclick="GeradorFrases()">
+          <p id="frase">Clica para iniciar a história do jogo</p>
         </div>
 
         <!-- Scripts -->
@@ -111,6 +119,7 @@
         <script src="Logar.js"></script>
         <script src="GeradorClientes.js"></script>
         <script src="Arrastar.js"></script>
+        <script src="GeradorFrases"></script>
 </body>
 
 </html>
