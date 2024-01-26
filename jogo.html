@@ -96,7 +96,7 @@
                 <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
                 <button id="buttonreset" onclick="reiniciarJogo();"></i>Repetir?</button>
             </div>
-            
+
             <!-- Tela de vitória -->
             <div id="win-tela" class="hidden2">
                 <h2>Parabéns! Ganhaste!</h2>
@@ -108,12 +108,17 @@
             <button id="botaorepetirfora" onclick="reiniciarJogo();"><i class='bx bx-repeat'></i></button>
         </div>
 
+        <div id="frase-container" onclick="GeradorFrases()">
+          <p id="frase">Clica para iniciar a história do jogo</p>
+        </div>
+
         <!-- Scripts -->
         <script src="ContadorTempo.js"></script>
         <script src="Alimentar.js"></script>
         <script src="Logar.js"></script>
         <script src="GeradorClientes.js"></script>
         <script src="Arrastar.js"></script>
+        <script src="GeradorFrases"></script>
 </body>
 
 </html>

@@ -512,6 +512,25 @@ body {
     font-size: 16px;
     position: absolute;
     left: 560px;
+    top:860px;
+}
+
+#frase-container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 50px;
+    background-color: rgb(152, 98, 31);
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 300px;
+    z-index: 8;
+}
+
+#frase {
+    margin: 0;
+    font-weight: bold;
     top: 860px;
 }
 
