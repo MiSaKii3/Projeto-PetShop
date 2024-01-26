@@ -19,6 +19,8 @@ for (let i = 0; i < arrastaveis.length; i++) {
         // Torna a imagem visível novamente ao terminar o arrasto
         arrastaveis[i].style.opacity = "1";
     }
+
+    
 }
 
 

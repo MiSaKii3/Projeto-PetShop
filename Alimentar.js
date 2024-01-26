@@ -1,4 +1,4 @@
-// Make an onclick for the element class "tacas"
+// Quando clicamos nas taças, ele pergunta se queremos alimentar os animais (não funciona :()
 var tacinhas = document.getElementsByClassName("tacas");
 
 
