@@ -5,10 +5,15 @@ const frases = [
 ];
 
 const fraseContainer = document.getElementById("frase-container");
+let indiceAtual = 0;
 
 fraseContainer.addEventListener("click", () => {
-    const randomIndex = Math.floor(Math.random() * frases.length);
-    const novaFrase = frases[randomIndex];
-    
-    fraseContainer.textContent = novaFrase;
+    if (indiceAtual < frases.length) {
+        const novaFrase = frases[indiceAtual];
+        fraseContainer.textContent = novaFrase;
+        indiceAtual++;
+    } else {
+        // Se todas as frases foram exibidas, oculta o contêiner
+        fraseContainer.style.display = "none";
+    }
 });
