@@ -17,13 +17,15 @@ function exibirYouWin() {
 
 // Função para atualizar o contador de tempo
 function atualizarContador() {
+    
 
     let dinheiroTotal = document.getElementById('dinheiroTotal');
-    localStorage.setItem("moedas", dinheiroTotal.textContent);
 
     segundos++;
     document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
-    localStorage.setItem("tempo", document.getElementById('contador').textContent);
+    
+    localStorage.setItem("moedas", dinheiroTotal.textContent);
+    localStorage.setItem("tempo", segundos);
 
     //se dinheiro igual a entre 0 e 50, perdemos o jogo mas apos o contador acabar
     if (segundos == 360) {
@@ -45,5 +47,16 @@ function atualizarContador() {
 }
 
 let segundos = 0;
+if(localStorage.getItem("tempo") != 0){
+    console.log("tempo não é 0");
+    segundos = localStorage.getItem("tempo");
+}
+document.getElementById('contador').textContent = formatarTempo(segundos);
+
+if(localStorage.getItem("moedas") != 0){
+    console.log("moedas não é 0");
+    let moedas = document.getElementById("dinheiroTotal");
+    moedas.textContent = localStorage.getItem("moedas");
+}
 const totalSegundos = 360; // 6 minutos
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
