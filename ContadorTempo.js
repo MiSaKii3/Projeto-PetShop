@@ -26,6 +26,8 @@ function esconderYouWin(){
 // Função para atualizar o contador de tempo
 function atualizarContador() {
     
+    UserLogado();
+
     let dinheiroTotal = document.getElementById('dinheiroTotal');
 
     document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
