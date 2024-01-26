@@ -1,4 +1,5 @@
-// Make an onclick for the element class "tacas"
+// Faz um evento onclick para o elemento "tacas" 
+
 var tacinhas = document.getElementsByClassName("tacas");
 
 

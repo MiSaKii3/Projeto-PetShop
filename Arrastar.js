@@ -1,8 +1,9 @@
 
 var arrastaveis = document.getElementsByClassName("arrastaveis");
-//for each arrastaveis, set attribute to draggable
+// Para todos os arrastaveis, "set attribute" para draggable
 for (let i = 0; i < arrastaveis.length; i++) {
     arrastaveis[i].ondragstart = function(event) {
+        
         // Esconde a imagem durante o arrasto
         arrastaveis[i].style.opacity = "0";
 

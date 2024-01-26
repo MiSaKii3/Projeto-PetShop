@@ -1,5 +1,5 @@
 
-let dados = {
+let dados = { //Dicionário com os dados dos dois elementos do grupo
 
     "angelsofy23": "Morganaisthebestchamp",
     "Camila": "123"
