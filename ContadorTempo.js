@@ -8,40 +8,55 @@ function formatarTempo(segundos) {
 
 // Função para exibir a tela de game over
 function exibirGameOver() {
-    let janelalose = document.getElementById('game-over-tela').classList.remove('hidden');
+    document.getElementById('game-over-tela').classList.remove('hidden');
 }
 // Função para exibir a tela de win
 function exibirYouWin() {
-    let janelawin = document.getElementById('win-tela').classList.remove('hidden2');
+    document.getElementById('win-tela').classList.remove('hidden2');
 }
 
 // Função para atualizar o contador de tempo
 function atualizarContador() {
+    
 
     let dinheiroTotal = document.getElementById('dinheiroTotal');
+
+    segundos++;
+    document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
+    
     localStorage.setItem("moedas", dinheiroTotal.textContent);
+    localStorage.setItem("tempo", segundos);
 
-    if (segundos < totalSegundos) {
+    //se dinheiro igual a entre 0 e 50, perdemos o jogo mas apos o contador acabar
+    if (segundos == 360) {
+        
+        if (dinheiroTotal.textContent <= 300) {
+            let ganhos = document.getElementById("ganhos-dia-lose");
+            ganhos.textContent = dinheiroTotal.textContent;
+            exibirGameOver();
+            clearInterval(intervalo);
 
-        segundos++;
-        document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
-        localStorage.setItem("tempo", document.getElementById('contador').textContent);
-
-        //se dinheiro igual a entre 0 e 50, perdemos o jogo mas apos o contador acabar
-        if (segundos == 360) {
-            if (dinheiroTotal.textContent >= 0 && dinheiroTotal.textContent <= 300) {
-                exibirGameOver();
-                clearInterval(intervalo);
-
-            } else if (dinheiroTotal.textContent > 300) {
-                exibirYouWin();
-                clearInterval(intervalo);
-            }
+        } else if (dinheiroTotal.textContent > 300) {
+            let ganhos = document.getElementById("ganhos-dia-win");
+            ganhos.textContent = dinheiroTotal.textContent;
+            exibirYouWin();
+            clearInterval(intervalo);
         }
     }
 
 }
 
 let segundos = 0;
+if(localStorage.getItem("tempo") != 0){
+    console.log("tempo não é 0");
+    segundos = localStorage.getItem("tempo");
+}
+document.getElementById('contador').textContent = formatarTempo(segundos);
+
+if(localStorage.getItem("moedas") != 0){
+    console.log("moedas não é 0");
+    let moedas = document.getElementById("dinheiroTotal");
+    moedas.textContent = localStorage.getItem("moedas");
+}
 const totalSegundos = 360; // 6 minutos
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo

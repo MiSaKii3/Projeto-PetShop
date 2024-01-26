@@ -20,36 +20,36 @@ const clients = [
 /* pedidos possiveis que os clientes facam */
 const pedidos = [
     // Animais
-    { url: 'Images/acessorios/animais/gatos/gato1.png', pedido: 'gato' },
-    { url: 'Images/acessorios/animais/gatos/gato2.png', pedido: 'gato' },
-    { url: 'Images/acessorios/animais/gatos/gato3.png', pedido: 'gato' },
-    { url: 'Images/acessorios/animais/gatos/gato4.png', pedido: 'gato' },
-    { url: 'Images/acessorios/animais/gatos/gato5.png', pedido: 'gato' },
-    { url: 'Images/acessorios/animais/gatos/gato6.png', pedido: 'gato' },
+    { url: 'Images/acessorios/animais/gatos/gato1.png', pedido: 'gato1' },
+    { url: 'Images/acessorios/animais/gatos/gato2.png', pedido: 'gato2' },
+    { url: 'Images/acessorios/animais/gatos/gato3.png', pedido: 'gato3' },
+    { url: 'Images/acessorios/animais/gatos/gato4.png', pedido: 'gato4' },
+    { url: 'Images/acessorios/animais/gatos/gato5.png', pedido: 'gato5' },
+    { url: 'Images/acessorios/animais/gatos/gato6.png', pedido: 'gato6' },
 
-    { url: 'Images/acessorios/animais/caes/cao1.png', pedido: 'cao' },
-    { url: 'Images/acessorios/animais/caes/cao2.png', pedido: 'cao' },
-    { url: 'Images/acessorios/animais/caes/cao3.png', pedido: 'cao' },
-    { url: 'Images/acessorios/animais/caes/cao4.png', pedido: 'cao' },
-    { url: 'Images/acessorios/animais/caes/cao5.png', pedido: 'cao' },
+    { url: 'Images/acessorios/animais/caes/cao1.png', pedido: 'cao1' },
+    { url: 'Images/acessorios/animais/caes/cao2.png', pedido: 'cao2' },
+    { url: 'Images/acessorios/animais/caes/cao3.png', pedido: 'cao3' },
+    { url: 'Images/acessorios/animais/caes/cao4.png', pedido: 'cao4' },
+    { url: 'Images/acessorios/animais/caes/cao5.png', pedido: 'cao5' },
 
-    { url: 'Images/acessorios/animais/coelhos/coelho1.png', pedido: 'coelho' },
-    { url: 'Images/acessorios/animais/coelhos/coelho2.png', pedido: 'coelho' },
-    { url: 'Images/acessorios/animais/coelhos/coelho3.png', pedido: 'coelho' },
-    { url: 'Images/acessorios/animais/coelhos/coelho4.png', pedido: 'coelho' },
+    { url: 'Images/acessorios/animais/coelhos/coelho1.png', pedido: 'coelho1' },
+    { url: 'Images/acessorios/animais/coelhos/coelho2.png', pedido: 'coelho2' },
+    { url: 'Images/acessorios/animais/coelhos/coelho3.png', pedido: 'coelho3' },
+    { url: 'Images/acessorios/animais/coelhos/coelho4.png', pedido: 'coelho4' },
     //...
 
-    { url: 'Images/acessorios/animais/hamster/hamster1.png', pedido: 'hamster' },
-    { url: 'Images/acessorios/animais/hamster/hamster2.png', pedido: 'hamster' },
-    { url: 'Images/acessorios/animais/hamster/hamster3.png', pedido: 'hamster' },
-    { url: 'Images/acessorios/animais/hamster/hamster4.png', pedido: 'hamster' },
-    { url: 'Images/acessorios/animais/hamster/hamster5.png', pedido: 'hamster' },
+    { url: 'Images/acessorios/animais/hamster/hamster1.png', pedido: 'hamster1' },
+    { url: 'Images/acessorios/animais/hamster/hamster2.png', pedido: 'hamster2' },
+    { url: 'Images/acessorios/animais/hamster/hamster3.png', pedido: 'hamster3' },
+    { url: 'Images/acessorios/animais/hamster/hamster4.png', pedido: 'hamster4' },
+    { url: 'Images/acessorios/animais/hamster/hamster5.png', pedido: 'hamster5' },
 
     // Comidas
-    { url: 'Images/acessorios/acessoriosgatos/comidagato.png', pedido: 'comida_gato' },
-    { url: 'Images/acessorios/acessorioscaes/comidacao.png', pedido: 'comida_cao' },
-    { url: 'Images/acessorios/acessorioscoelhos/comidacoelho.png', pedido: 'comida_coelho' },
-    { url: 'Images/acessorios/acessorioshamsters/comidahamster.png', pedido: 'comida_hamster' }
+    { url: 'Images/acessorios/acessoriosgatos/comidagato.png', pedido: 'comidagato' },
+    { url: 'Images/acessorios/acessorioscaes/comidacao.png', pedido: 'comidacao' },
+    { url: 'Images/acessorios/acessorioscoelhos/comidacoelho.png', pedido: 'comidacoelho' },
+    { url: 'Images/acessorios/acessorioshamsters/comidahamster.png', pedido: 'comidahamster' }
     //...
 ]
 
@@ -62,7 +62,9 @@ let clientesInGame = [null, null, null, null, null]; // Nao cria mais que 5 clie
 /* Funcao de gerar um cliente */
 function generate() {
 
-    //console.log(clientesInGame);
+    let tempo = document.getElementById("contador");
+    if (tempo.textContent == "00:06:00") return; // Jogo acabou
+    
     let lugar = procuraLugarParaCliente();
     if (lugar == -1) return;  // Nao havia lugar :(
 
@@ -101,6 +103,11 @@ function generate() {
 
     // Se o tempo acabar, remove-se o cliente
     var timer = setInterval(function () {
+        let tempo = document.getElementById("contador");
+        if (tempo.textContent == "00:06:00"){ // Jogo acabou
+            clearInterval(timer); 
+            return;
+        }
         if (temporizador.textContent == 1) {
             div.removeChild(clientDiv);
             clientesInGame[lugar] = null;
@@ -123,7 +130,7 @@ function generate() {
     }, 1000);
 
     clientDiv.ondrop = function (event) {
-        onDrop(event, timer);
+        onDrop(event, timer, pedido);
     }
     clientDiv.ondragover = function (event) {
         allowDrop(event);
@@ -191,44 +198,20 @@ function allowDrop(event) {
     event.preventDefault();
 }
 
-var comidas = [
-    "comidacao",
-    "comidagato",
-    "comidacoelho",
-    "comidahamster",
-    "cao1",
-    "cao2",
-    "cao3",
-    "cao4",
-    "cao5",
-    "gato1",
-    "gato2",
-    "gato3",
-    "gato4",
-    "gato5",
-    "gato6",
-    "coelho1",
-    "coelho2",
-    "coelho3",
-    "coelho4",
-    "hamster1",
-    "hamster2",
-    "hamster3",
-    "hamster4",
-    "hamster5"
-];
-
-function onDrop(event, timer) {
+function onDrop(event, timer, pedido) {
     event.preventDefault();
-    var foodURL = event.dataTransfer.getData("text");
-    var foodArgs = foodURL.split("/");
-    var foodPNG = foodArgs[foodArgs.length - 1];
-    var food = foodPNG.split(".")[0];
-    console.log(food);
 
-    if (!comidas.includes(food))
-        return; // Se nao for uma comida, nao faz nada
+    let tempo = document.getElementById("contador");
+    if (tempo.textContent == "00:06:00") return; // Jogo acabou
 
+    var recebidoURL = event.dataTransfer.getData("text");
+    var recebidoArgs = recebidoURL.split("/");
+    var recebidoPNG = recebidoArgs[recebidoArgs.length - 1];
+    var recebido = recebidoPNG.split(".")[0];
+    console.log(recebido);
+    console.log(pedido.alt);
+    if(recebido != pedido.alt) 
+        return; // Se nao for o pedido do cliente, nao faz nada
 
     clearInterval(timer);
 
