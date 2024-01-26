@@ -586,3 +586,7 @@ body {
     background-color: #ffa166;
     color: #000000;
 }
+
+#buttonreset:hover {
+    background-color: #ff6200;
+}
