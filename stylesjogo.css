@@ -548,8 +548,8 @@ body {
     height: 50px;
     background-color: rgb(152, 98, 31);
     cursor: pointer;
-    margin-top: 100px;
-    margin-left: 300px;
+    margin-top: 110px;
+    margin-left: 50px;
     z-index: 8;
 }
 
@@ -595,8 +595,8 @@ body {
 #botaoformulario
 {
     position: absolute;
-    top: 33px;
-    left: 200px;
+    top: 720px;
+    left: 150px;
     padding: 10px 20px;
     background-color: transparent;
     color: #000000;
@@ -611,4 +611,9 @@ body {
 
 #botaoformulario:hover{
     background-color: #ffa166;
+}
+
+#userlogado{
+    font-weight: bold;
+    font-size: 20px;
 }

@@ -1,5 +1,4 @@
-// Faz um evento onclick para o elemento "tacas" 
-
+// Quando clicamos nas taças, ele pergunta se queremos alimentar os animais (não funciona :()
 var tacinhas = document.getElementsByClassName("tacas");
 
 
