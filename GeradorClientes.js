@@ -1,3 +1,4 @@
+
 /* Array de dicionarios que guarda os clientes que podem aparecer */
 const clients = [
     { url: 'Images/Clientes/tile001.png', name: 'tile001' },
@@ -62,8 +63,7 @@ let clientesInGame = [null, null, null, null, null]; // Nao cria mais que 5 clie
 /* Funcao de gerar um cliente */
 function generate() {
 
-    let tempo = document.getElementById("contador");
-    if (tempo.textContent == "00:06:00") return; // Jogo acabou
+    if (segundos >= 360) return; // Jogo acabou
     
     let lugar = procuraLugarParaCliente();
     if (lugar == -1) return;  // Nao havia lugar :(
@@ -103,8 +103,7 @@ function generate() {
 
     // Se o tempo acabar, remove-se o cliente
     var timer = setInterval(function () {
-        let tempo = document.getElementById("contador");
-        if (tempo.textContent == "00:06:00"){ // Jogo acabou
+        if (segundos >= 360){ // Jogo acabou
             clearInterval(timer); 
             return;
         }
@@ -201,8 +200,7 @@ function allowDrop(event) {
 function onDrop(event, timer, pedido) {
     event.preventDefault();
 
-    let tempo = document.getElementById("contador");
-    if (tempo.textContent == "00:06:00") return; // Jogo acabou
+    if (segundos >= 360) return; // Jogo acabou
 
     var recebidoURL = event.dataTransfer.getData("text");
     var recebidoArgs = recebidoURL.split("/");
@@ -234,3 +232,13 @@ function onDrop(event, timer, pedido) {
     clientesInGame[lugar] = null;
 }
 
+function resetClientes(){
+    for (let lugar_n = 0; lugar_n < clientesInGame.length; lugar_n++) {
+        // Se nao estiver nenhum cliente la, retorna o numero do lugar
+        if (clientesInGame[lugar_n] != null) {
+            div.removeChild(clientesInGame[lugar_n]);
+            clientesInGame[lugar_n] = null;
+        }
+    }
+    return;
+}

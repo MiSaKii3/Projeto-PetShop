@@ -10,10 +10,18 @@ function formatarTempo(segundos) {
 function exibirGameOver() {
     document.getElementById('game-over-tela').classList.remove('hidden');
 }
+function esconderGameOver(){
+    document.getElementById('game-over-tela').classList.add('hidden');
+}
 // Função para exibir a tela de win
 function exibirYouWin() {
     document.getElementById('win-tela').classList.remove('hidden2');
 }
+
+function esconderYouWin(){
+    document.getElementById('win-tela').classList.add('hidden2');
+}
+
 
 // Função para atualizar o contador de tempo
 function atualizarContador() {
@@ -21,14 +29,13 @@ function atualizarContador() {
 
     let dinheiroTotal = document.getElementById('dinheiroTotal');
 
-    segundos++;
     document.getElementById('contador').textContent = formatarTempo(segundos); // Exibe em segundos
     
     localStorage.setItem("moedas", dinheiroTotal.textContent);
     localStorage.setItem("tempo", segundos);
 
     //se dinheiro igual a entre 0 e 50, perdemos o jogo mas apos o contador acabar
-    if (segundos == 360) {
+    if (segundos >= totalSegundos) {
         
         if (dinheiroTotal.textContent <= 300) {
             let ganhos = document.getElementById("ganhos-dia-lose");
@@ -43,6 +50,8 @@ function atualizarContador() {
             clearInterval(intervalo);
         }
     }
+    
+    segundos++;
 
 }
 
@@ -59,4 +68,16 @@ if(localStorage.getItem("moedas") != 0){
     moedas.textContent = localStorage.getItem("moedas");
 }
 const totalSegundos = 360; // 6 minutos
-const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
+let intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
+
+function Reset(){
+    segundos = 0;
+    document.getElementById('contador').textContent = formatarTempo(segundos);
+    clearInterval(intervalo);
+    let moedas = document.getElementById("dinheiroTotal");
+    moedas.textContent = 0;
+    intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
+    esconderGameOver();
+    esconderYouWin();
+    resetClientes();
+}

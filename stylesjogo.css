@@ -498,6 +498,27 @@ body {
     background-color: #ffa166;
 }
 
+#resetButton {
+    position: absolute;
+    top:150px;
+    left: 33px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 66px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100px;
+    height: 100px;
+}
+
+#resetButton:hover {
+    background-color: #ffa166;
+}
+
+
 /* Disposição dos clientes */
 
 #cliente {

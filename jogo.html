@@ -13,6 +13,7 @@
 
 <body>
     <button id="coolButton" onclick="Home();"><i class='bx bxs-home'></i></button>
+    <button id="resetButton" onclick="Reset();"><i class='bx bx-reset'></i></button>
     <div class="game-container" ondragover="allowDrop(event)">
 
         <!-- Contador de tempo -->
@@ -93,14 +94,14 @@
             <div id="game-over-tela" class="hidden">
                 <h2>Game Over</h2>
                 <br></br>
-                <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
+                <p>Ganhos do dia: <span id="ganhos-dia-lose">0</span></p>
             </div>
             
             <!-- Tela de vitória -->
             <div id="win-tela" class="hidden2">
                 <h2>Parabéns! Ganhaste</h2>
                 <br></br>
-                <p>Ganhos do dia: <span id="ganhos-dia">0</span></p>
+                <p>Ganhos do dia: <span id="ganhos-dia-win">0</span></p>
             </div>
         </div>
 
