@@ -58,5 +58,6 @@ if(localStorage.getItem("moedas") != 0){
     let moedas = document.getElementById("dinheiroTotal");
     moedas.textContent = localStorage.getItem("moedas");
 }
+
 const totalSegundos = 360; // 6 minutos
 const intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
