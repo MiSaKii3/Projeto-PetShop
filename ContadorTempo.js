@@ -72,13 +72,13 @@ const totalSegundos = 360; // 6 minutos
 let intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
 
 function Reset(){
+    clearInterval(intervalo);
+    resetClientes();
     segundos = 0;
     document.getElementById('contador').textContent = formatarTempo(segundos);
-    clearInterval(intervalo);
     let moedas = document.getElementById("dinheiroTotal");
     moedas.textContent = 0;
     intervalo = setInterval(atualizarContador, 1000); // Atualiza a cada segundo
     esconderGameOver();
     esconderYouWin();
-    resetClientes();
 }
