@@ -13,7 +13,6 @@
 
 <body>
     <button id="coolButton" onclick="Home();"><i class='bx bxs-home'></i></button>
-    <button id="resetButton" onclick="Reset();"><i class='bx bx-reset'></i></button>
     <div class="game-container" ondragover="allowDrop(event)">
 
         <!-- Contador de tempo -->
@@ -95,7 +94,7 @@
                 <h2>Game Over</h2>
                 <br></br>
                 <p>Ganhos do dia: <span id="ganhos-dia-lose">0</span></p>
-                <button id="buttonreset" onclick="reiniciarJogo();"></i>Repetir?</button>
+                <button id="buttonreset" onclick="Reset();"></i>Repetir?</button>
             </div>
 
             <!-- Tela de vitória -->
@@ -103,10 +102,10 @@
                 <h2>Parabéns! Ganhaste!</h2>
                 <br></br>
                 <p>Ganhos do dia: <span id="ganhos-dia-win">0</span></p>
-                <button id="buttonreset" onclick="reiniciarJogo();"></i>Repetir?</button>
+                <button id="buttonreset" onclick="Reset();"></i>Repetir?</button>
             </div>
 
-            <button id="botaorepetirfora" onclick="reiniciarJogo();"><i class='bx bx-repeat'></i></button>
+            <button id="botaorepetirfora" onclick="Reset();"><i class='bx bx-repeat'></i></button>
         </div>
 
         <div id="frase-container" onclick="GeradorFrases()">

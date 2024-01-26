@@ -38,13 +38,13 @@ function atualizarContador() {
     if (segundos >= totalSegundos) {
         
         if (dinheiroTotal.textContent <= 300) {
-            let ganhos = document.getElementById("ganhos-dia");
+            let ganhos = document.getElementById("ganhos-dia-lose");
             ganhos.textContent = dinheiroTotal.textContent;
             exibirGameOver();
             clearInterval(intervalo);
 
         } else if (dinheiroTotal.textContent > 300) {
-            let ganhos = document.getElementById("ganhos-dia");
+            let ganhos = document.getElementById("ganhos-dia-win");
             ganhos.textContent = dinheiroTotal.textContent;
             exibirYouWin();
             clearInterval(intervalo);
