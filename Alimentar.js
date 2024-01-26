@@ -1,4 +1,4 @@
-// Quando clicamos nas taças, ele pergunta se queremos alimentar os animais (não funciona :()
+// Quando clicamos nas taças, ele pergunta se queremos alimentar os animais (não funciona :c)
 var tacinhas = document.getElementsByClassName("tacas");
 
 
