@@ -476,3 +476,35 @@ body {
 .hidden2{
     display: none;
 }
+
+#temporizadorcaes{
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 380px;
+    top:610px;
+}
+
+#temporizadorgatos{
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 590px;
+    top:630px;
+}
+
+#temporizadorcoelhos{
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 370px;
+    top: 860px;
+}
+
+#temporizadorhamsters{
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    left: 560px;
+    top:860px;
+}

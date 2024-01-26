@@ -167,6 +167,7 @@ function CriarTemp() {
     temporizador.textContent = '15';
     temporizador.id = 'temporizador';
     temporizador.style.zIndex = '6';
+    temporizador.style.fontSize = '16px';
     temporizador.style.fontWeight = 'bold';
 
     return temporizador;
