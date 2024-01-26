@@ -5,15 +5,10 @@ let dados = {
     "Camila": "123"
 }
 
-console.log(dados);
-
-console.log(localStorage.getItem("dados"));
 
 if (localStorage.getItem("dados") == null) {
     localStorage.setItem("dados", JSON.stringify(dados));
 }
-
-console.log(localStorage.getItem("dados"));
 
 function Login() {
     dados = JSON.parse(localStorage.getItem("dados"));
