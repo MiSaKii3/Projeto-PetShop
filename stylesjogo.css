@@ -556,6 +556,7 @@ body {
 #frase {
     margin: 0;
     font-weight: bold;
+    margin-top: -9px;
 }
 
 #botaorepetirfora{
