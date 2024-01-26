@@ -1,8 +1,20 @@
-let dados = { 
 
-        "angelsofy23" : "Morganaisthebestchamp",
-        "Camila" : "123"
-    }
+let dados = {
+
+    "angelsofy23": "Morganaisthebestchamp",
+    "Camila": "123"
+}
+
+console.log(dados);
+
+console.log(localStorage.getItem("dados"));
+
+if (localStorage.getItem("dados") == null) {
+    localStorage.setItem("dados", JSON.stringify(dados));
+}
+
+console.log(localStorage.getItem("dados"));
+
 function Login() {
     dados = JSON.parse(localStorage.getItem("dados"));
     let user = document.getElementById("caixatextouser");
@@ -16,9 +28,7 @@ function Login() {
     }
 
     //Verificar se as caixas de texto estão vazias
-
-    if(user.value == "" || pass.value == "")
-    {
+    if (user.value == "" || pass.value == "") {
         alert("Preencha os campos");
         return false;
     }
@@ -28,12 +38,12 @@ function Login() {
 }
 
 //Voltar à página de login (ou homepage)
-function Home(){
+function Home() {
     window.location.href = "index.html";
 }
 
-function atualizarDados(){
-    
+function atualizarDados() {
+
     dados = JSON.parse(localStorage.getItem("dados"));
     let user = document.getElementById("caixatextouser2").value;
     let pass = document.getElementById("caixatextopass2").value;
@@ -42,19 +52,19 @@ function atualizarDados(){
     let newPass = document.getElementById("caixatextopassform").value;
 
     //Verificar user e pass
-    if(dados[user] === pass){
-        if(newPass != ""){
+    if (dados[user] === pass) {
+        if (newPass != "") {
             dados[user] = newPass;
         }
-        if(newUser != ""){
+        if (newUser != "") {
             dados[newUser] = dados[user];
             delete dados[user];
         }
-        
+
         localStorage.setItem("dados", JSON.stringify(dados));
 
         alert("Dados atualizados com sucesso!");
-    }else{
+    } else {
         console.log(user.value);
         console.log(pass.value);
         console.log(newUser.value);
