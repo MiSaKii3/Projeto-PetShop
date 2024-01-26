@@ -3,7 +3,6 @@ let dados = {
         "angelsofy23" : "Morganaisthebestchamp",
         "Camila" : "123"
     }
-
 function Login() {
 
     let user = document.getElementById("caixatextouser");
@@ -12,6 +11,7 @@ function Login() {
     //Para os dados das caixas de texto coincidirem com os dados do dicionário
     if (dados[user.value] === pass.value) {
         window.location.href = "jogo.html";
+        localStorage.setItem("jogador", user.value);
         return true;
     }
 
