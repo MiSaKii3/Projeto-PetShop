@@ -223,7 +223,8 @@ function onDrop(event, timer, pedido) {
 
     let id = divParent.id;
 
-    // split on _
+    // split no _ para pegar apenas o id que é o lugar na fila
+    // exemplo: cliente_1, cliente_2, cliente_3, etc... e queremos apenas o nmr
     let lugar = parseInt(id.split('_')[1]);
 
     // Remover o cliente da lista e do ecra
@@ -236,17 +237,17 @@ function resetClientes(){
     // Pega a referencia do ultimo id de interval + 1
     const interval_id = window.setInterval(function(){}, Number.MAX_SAFE_INTEGER);
 
-    // Limpa todos os timers dos clientes
+    // Limpa todos os timers dos clientes (Todos os Intervals na verdade)
     for (let i = 1; i < interval_id; i++) {
         window.clearInterval(i);
     }
 
+    // Remove todos os clientes da pagina e da lista
     for (let lugar_n = 0; lugar_n < clientesInGame.length; lugar_n++) {
         if (clientesInGame[lugar_n] != null) {
             div.removeChild(clientesInGame[lugar_n]);
             clientesInGame[lugar_n] = null;
         }
     }
-    setInterval(generate, 1000); // Volta a gerar clientes a cada segundo
-    return;
+    setInterval(generate, 1000); // Volta a gerar clientes a cada segundo (Visto que eliminamos todos os Intervals)
 }

@@ -5,7 +5,7 @@ let dados = { //Dicionário com os dados dos dois elementos do grupo
     "Camila": "123"
 }
 
-
+// Guarda os dados, caso estes ainda nao tenham sido guardados
 if (localStorage.getItem("dados") == null) {
     localStorage.setItem("dados", JSON.stringify(dados));
 }

@@ -1,4 +1,4 @@
-// Dicionário das frases da história do jogo
+// Lista das frases da história do jogo
 
 const frases = [
     "Hoje é o meu primeiro dia de trabalho, espero que tudo corra bem.",
@@ -10,7 +10,7 @@ const fraseContainer = document.getElementById("frase-container"); // Vai buscar
 let indiceAtual = 0;
 
 fraseContainer.addEventListener("click", () => {
-    if (indiceAtual < frases.length) {  // Percorre o dicionário de frases
+    if (indiceAtual < frases.length) {  // Percorre o lista de frases
         const novaFrase = frases[indiceAtual];
         fraseContainer.textContent = novaFrase;
         indiceAtual++;
