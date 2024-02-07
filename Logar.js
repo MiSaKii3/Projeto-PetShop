@@ -1,10 +1,11 @@
- let dados = {
+
+let dados = { //Dicionário com os dados dos dois elementos do grupo
 
     "angelsofy23": "Morganaisthebestchamp",
     "Camila": "123"
 }
 
-
+// Guarda os dados, caso estes ainda nao tenham sido guardados
 if (localStorage.getItem("dados") == null) {
     localStorage.setItem("dados", JSON.stringify(dados));
 }
@@ -59,17 +60,14 @@ function atualizarDados() {
 
         alert("Dados atualizados com sucesso!");
     } else {
+        console.log(user.value);
+        console.log(pass.value);
+        console.log(newUser.value);
+        console.log(newPass.value);
+        console.log(dados);
         alert("Username ou Password incorretas");
     }
 }
 function VoltarFormulario() {
     window.location.href = "formulario.html";
 }
-
-function UserLogado()
-{
-    let loguser = document.getElementById("userlogado");
-    loguser.textContent = localStorage.getItem("jogador");
-}
-
-
