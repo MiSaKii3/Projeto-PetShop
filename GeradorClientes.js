@@ -115,7 +115,7 @@ function generate() {
             clearInterval(timer); 
             return;
         }
-        // Quando o temporizador chegar ao fim
+        // Quando o temporizador do cliente chegar ao fim
         if (temporizador.textContent == 1) {
             // Remove o cliente da tela
             allClients.removeChild(clientDiv);
@@ -153,7 +153,7 @@ function generate() {
 
 function createCliente() {
 
-    const randomC = clients[Math.floor(Math.random() * clients.length)];
+    const randomC = clients[Math.floor(Math.random() * clients.length)]; //Pega um cliente aleatório da lista clientes
     const cliente = document.createElement('img');
     cliente.src = randomC.url;
     cliente.alt = randomC.name;
@@ -165,7 +165,7 @@ function createCliente() {
 function createPedido() {
 
     const pedido = document.createElement('img');
-    const randomPedido = pedidos[Math.floor(Math.random() * pedidos.length)];
+    const randomPedido = pedidos[Math.floor(Math.random() * pedidos.length)]; //Pega um pedido aleatório da lista clientes
     pedido.src = randomPedido.url;
     pedido.alt = randomPedido.pedido;
     pedido.style.zIndex = '3'; // Para nao ficar atras do cenario
@@ -182,7 +182,7 @@ function createBalaoDeFala() {
     return balao_de_fala;
 }
 
-function CriarTemp() {
+function CriarTemp() { //Coloca caracteristicas de css no temporizador dos clientes
     const temporizador = document.createElement('div');
     temporizador.textContent = '15';
     temporizador.id = 'temporizador';
@@ -250,7 +250,7 @@ function onDrop(event, timer, pedido) {
     if(recebido != pedido.alt) 
         return; // Se nao for o pedido do cliente, nao faz nada e acabada a funcao
 
-    // Se for o que o cliente pediu, cancela o timer do cliente (visto que o vamos remover o cliente)
+    // Se for o que o cliente pediu, cancela o timer do cliente (visto que vamos remover o cliente)
     clearInterval(timer);
 
     // Adiciona dinheiro

@@ -90,7 +90,7 @@ let segundos = 0;
 // Atualiza o tempo se houver algum guardado (independente da conta logada)
 if(localStorage.getItem("tempo") != 0){
     console.log("tempo não é 0");
-    segundos = localStorage.getItem("tempo");
+    segundos = localStorage.getItem("tempo"); //Usa o tempo que está guardado para colocar na variável segundos
 }
 document.getElementById('contador').textContent = formatarTempo(segundos);
 
@@ -98,11 +98,12 @@ document.getElementById('contador').textContent = formatarTempo(segundos);
 if(localStorage.getItem("moedas") != 0){
     console.log("moedas não é 0");
     let moedas = document.getElementById("dinheiroTotal");
+    //Se as moedas não forem nulas
     if(localStorage.getItem("moedas") != null)
     {
-        moedas.textContent = localStorage.getItem("moedas");
+        moedas.textContent = localStorage.getItem("moedas"); //Mostra as moedas atuais (guardadas no localstorage)
     } else{
-        // Se nao mete 0 moedas
+        // Se nao, mete 0 moedas
         moedas.textContent = 0;
     }
 }
