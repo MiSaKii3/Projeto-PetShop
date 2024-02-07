@@ -13,7 +13,7 @@ for (let i = 0; i < arrastaveis.length; i++) {
         // Define o efeito permitido (move neste caso) que vai mudar a aparencia do rato
         event.dataTransfer.effectAllowed = "move";
     }
-    // Enquanto se esta arrastando um "arrastavel":
+    // Enquanto se esta a arrastar um "arrastavel":
     arrastaveis[i].ondragover = function(event) {
         // Evita o comportamento padrão de arrastar sobre elementos, que inclui o sinal de proibido
         event.preventDefault();
@@ -25,7 +25,7 @@ for (let i = 0; i < arrastaveis.length; i++) {
     }
     // NOTA: A imagem não se vai mover, 
     // quando largamos o "arrastavel" a imagem original volta ao inicio
-    // Visto que nunca foi mudada as coordenadas da imagem
+    // Visto que as coordenadas da imagem nunca foram alteradas
 }
 
 
