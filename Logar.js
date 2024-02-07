@@ -71,3 +71,9 @@ function atualizarDados() {
 function VoltarFormulario() {
     window.location.href = "formulario.html";
 }
+
+function UserLogado()
+{
+    let loguser = document.getElementById("userlogado");
+    loguser.textContent = localStorage.getItem("jogador");
+}
